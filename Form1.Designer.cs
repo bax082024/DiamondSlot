@@ -127,7 +127,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label1.ForeColor = Color.SandyBrown;
-            label1.Location = new Point(645, 616);
+            label1.Location = new Point(651, 597);
             label1.Name = "label1";
             label1.Size = new Size(106, 20);
             label1.TabIndex = 3;
@@ -153,7 +153,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label3.ForeColor = Color.SandyBrown;
-            label3.Location = new Point(423, 575);
+            label3.Location = new Point(467, 79);
             label3.Name = "label3";
             label3.Size = new Size(59, 20);
             label3.TabIndex = 5;
@@ -164,12 +164,12 @@
             button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.LawnGreen;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(435, 613);
+            button1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(433, 577);
             button1.Name = "button1";
-            button1.Size = new Size(131, 43);
+            button1.Size = new Size(176, 59);
             button1.TabIndex = 6;
-            button1.Text = "Spin";
+            button1.Text = "SPIN";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -216,7 +216,7 @@
             labelJackpot.BackColor = Color.Black;
             labelJackpot.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelJackpot.ForeColor = Color.Gold;
-            labelJackpot.Location = new Point(391, 58);
+            labelJackpot.Location = new Point(395, 18);
             labelJackpot.Name = "labelJackpot";
             labelJackpot.Size = new Size(251, 39);
             labelJackpot.TabIndex = 9;
@@ -423,9 +423,9 @@
             btnPaytable.Anchor = AnchorStyles.None;
             btnPaytable.BackColor = Color.SeaGreen;
             btnPaytable.FlatStyle = FlatStyle.Flat;
-            btnPaytable.Location = new Point(812, 593);
+            btnPaytable.Location = new Point(849, 636);
             btnPaytable.Name = "btnPaytable";
-            btnPaytable.Size = new Size(75, 22);
+            btnPaytable.Size = new Size(75, 25);
             btnPaytable.TabIndex = 12;
             btnPaytable.Text = "Paytable";
             btnPaytable.UseVisualStyleBackColor = false;
