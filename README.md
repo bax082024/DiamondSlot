@@ -49,3 +49,7 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 4. **Winnings:**
 	- Are based on matching symbols across active paylines. Check the Paytable for detailed rules.
 ---
+
+## ScreenShot
+
+- [game](/Images/thegame.png)
