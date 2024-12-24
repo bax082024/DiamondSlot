@@ -56,9 +56,9 @@
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.LemonChiffon;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(69, 155);
+            pictureBox1.Location = new Point(38, 140);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(133, 126);
+            pictureBox1.Size = new Size(150, 142);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -68,9 +68,9 @@
             pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.BackColor = Color.LemonChiffon;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Location = new Point(218, 155);
+            pictureBox2.Location = new Point(201, 140);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(133, 126);
+            pictureBox2.Size = new Size(150, 142);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -80,9 +80,9 @@
             pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BackColor = Color.LemonChiffon;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(368, 155);
+            pictureBox3.Location = new Point(364, 140);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(133, 126);
+            pictureBox3.Size = new Size(150, 142);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -91,12 +91,12 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.BackColor = Color.Black;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.ForeColor = Color.Chocolate;
+            label1.BackColor = Color.DarkSlateGray;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label1.ForeColor = Color.Tomato;
             label1.Location = new Point(99, 305);
             label1.Name = "label1";
-            label1.Size = new Size(73, 15);
+            label1.Size = new Size(106, 20);
             label1.TabIndex = 3;
             label1.Text = "Credits: 100";
             // 
@@ -104,12 +104,12 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.BackColor = Color.Black;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.ForeColor = Color.Chocolate;
+            label2.BackColor = Color.DarkSlateGray;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label2.ForeColor = Color.Tomato;
             label2.Location = new Point(69, 381);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(57, 20);
             label2.TabIndex = 4;
             label2.Text = "Bet: 5";
             // 
@@ -117,12 +117,12 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.BackColor = Color.Black;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.ForeColor = Color.Chocolate;
+            label3.BackColor = Color.DarkSlateGray;
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label3.ForeColor = Color.Tomato;
             label3.Location = new Point(411, 305);
             label3.Name = "label3";
-            label3.Size = new Size(42, 15);
+            label3.Size = new Size(59, 20);
             label3.TabIndex = 5;
             label3.Text = "Win: 0";
             // 
@@ -149,7 +149,7 @@
             btnAddBet.FlatStyle = FlatStyle.Flat;
             btnAddBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAddBet.ImageAlign = ContentAlignment.TopLeft;
-            btnAddBet.Location = new Point(94, 399);
+            btnAddBet.Location = new Point(105, 404);
             btnAddBet.Name = "btnAddBet";
             btnAddBet.Size = new Size(15, 15);
             btnAddBet.TabIndex = 7;
@@ -165,7 +165,7 @@
             btnDecreaseBet.FlatStyle = FlatStyle.Flat;
             btnDecreaseBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnDecreaseBet.ImageAlign = ContentAlignment.TopLeft;
-            btnDecreaseBet.Location = new Point(69, 399);
+            btnDecreaseBet.Location = new Point(69, 404);
             btnDecreaseBet.Name = "btnDecreaseBet";
             btnDecreaseBet.Size = new Size(15, 15);
             btnDecreaseBet.TabIndex = 8;
@@ -215,7 +215,7 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
-            panel1.BackColor = Color.Transparent;
+            panel1.BackColor = Color.DarkSlateGray;
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox1);
@@ -238,6 +238,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
+            BackgroundImage = Properties.Resources.bg1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(857, 564);
             Controls.Add(panel1);
             Name = "Form1";
