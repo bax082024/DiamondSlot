@@ -23,16 +23,24 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 - Configurable Win Rates: Easily tweak the win rate by adjusting symbol weights.
 - Custom **Backgrounds and Icons:** Background textures and icon images can be replaced with custom designs.
 
+---
+
 ## Sound Effects
 
 - Includes dynamic sound effects for spins adding to the excitement.
+
+---
 
 ## Statistics
 
 - Displays current credits, active paylines, bets, and last spin winnings directly in the UI.
 
+---
+
 
 ## How to Play
 
 1. **Adjust the bet:**
-	-  Use the `+` and `-` buttons to set your desired bet amount and desired play lines  (1 to 3 credits per payline, and 1 to 5 paylines) Max bet total = 15 credits..
+	-  Use the `+` and `-` buttons to set your desired bet amount and desired play lines  (1 to 3 credits per payline, and 1 to 5 paylines) Max bet total = 15 credits.
+
+---
