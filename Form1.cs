@@ -11,7 +11,7 @@ namespace Slot777
         // Declare total, bet, and credits
         private long credits = 100;
         private long total = 0;
-        private int bet = 5;
+        private int bet = 1;
 
         public Form1()
         {
