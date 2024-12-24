@@ -39,6 +39,10 @@ namespace Slot777
                 {
                     imageCache[i] = Image.FromFile(fileName);
                 }
+                else
+                {
+                    MessageBox.Show($"Image file not found: {fileName}");
+                }
             }
         }
 
