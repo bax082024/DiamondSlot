@@ -269,7 +269,19 @@ namespace Slot777
             Label[] leftLabels = { lblLine1, lblLine2, lblLine3, lblLine4, lblLine5 };
             Label[] rightLabels = { lblLine6, lblLine7, lblLine8, lblLine9, lblLine10 };
 
-            
+            for (int i = 0; i < activeLines.Length; i++)
+            {
+                if (activeLines[i])
+                {
+                    leftLabels[i].ForeColor = Color.White; // Active lines in white
+                    rightLabels[i].ForeColor = Color.White;
+                }
+                else
+                {
+                    leftLabels[i].ForeColor = Color.Gray; // Inactive lines in gray
+                    rightLabels[i].ForeColor = Color.Gray;
+                }
+            }
 
         }
 

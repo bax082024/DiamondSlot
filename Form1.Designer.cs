@@ -253,6 +253,7 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(label3);
             panel1.Dock = DockStyle.Fill;
+            panel1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
@@ -262,9 +263,10 @@
             // 
             lblLine10.AutoSize = true;
             lblLine10.BackColor = Color.FromArgb(128, 128, 255);
+            lblLine10.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine10.Location = new Point(965, 68);
             lblLine10.Name = "lblLine10";
-            lblLine10.Size = new Size(38, 15);
+            lblLine10.Size = new Size(42, 13);
             lblLine10.TabIndex = 23;
             lblLine10.Text = "Line 5";
             // 
@@ -272,9 +274,10 @@
             // 
             lblLine9.AutoSize = true;
             lblLine9.BackColor = Color.FromArgb(255, 128, 0);
+            lblLine9.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine9.Location = new Point(965, 593);
             lblLine9.Name = "lblLine9";
-            lblLine9.Size = new Size(38, 15);
+            lblLine9.Size = new Size(42, 13);
             lblLine9.TabIndex = 22;
             lblLine9.Text = "Line 4";
             // 
@@ -282,9 +285,10 @@
             // 
             lblLine8.AutoSize = true;
             lblLine8.BackColor = Color.Red;
+            lblLine8.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine8.Location = new Point(965, 471);
             lblLine8.Name = "lblLine8";
-            lblLine8.Size = new Size(38, 15);
+            lblLine8.Size = new Size(42, 13);
             lblLine8.TabIndex = 21;
             lblLine8.Text = "Line 3";
             // 
@@ -292,9 +296,10 @@
             // 
             lblLine7.AutoSize = true;
             lblLine7.BackColor = Color.Lime;
+            lblLine7.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine7.Location = new Point(965, 177);
             lblLine7.Name = "lblLine7";
-            lblLine7.Size = new Size(38, 15);
+            lblLine7.Size = new Size(42, 13);
             lblLine7.TabIndex = 20;
             lblLine7.Text = "Line 2";
             // 
@@ -302,10 +307,10 @@
             // 
             lblLine6.AutoSize = true;
             lblLine6.BackColor = Color.Blue;
-            lblLine6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLine6.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine6.Location = new Point(965, 322);
             lblLine6.Name = "lblLine6";
-            lblLine6.Size = new Size(40, 15);
+            lblLine6.Size = new Size(42, 13);
             lblLine6.TabIndex = 19;
             lblLine6.Text = "Line 1";
             // 
@@ -313,9 +318,10 @@
             // 
             lblLine5.AutoSize = true;
             lblLine5.BackColor = Color.FromArgb(128, 128, 255);
+            lblLine5.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine5.Location = new Point(40, 68);
             lblLine5.Name = "lblLine5";
-            lblLine5.Size = new Size(38, 15);
+            lblLine5.Size = new Size(42, 13);
             lblLine5.TabIndex = 18;
             lblLine5.Text = "Line 5";
             // 
@@ -323,9 +329,10 @@
             // 
             lblLine4.AutoSize = true;
             lblLine4.BackColor = Color.FromArgb(255, 128, 0);
+            lblLine4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine4.Location = new Point(40, 593);
             lblLine4.Name = "lblLine4";
-            lblLine4.Size = new Size(38, 15);
+            lblLine4.Size = new Size(42, 13);
             lblLine4.TabIndex = 17;
             lblLine4.Text = "Line 4";
             // 
@@ -333,9 +340,10 @@
             // 
             lblLine3.AutoSize = true;
             lblLine3.BackColor = Color.Red;
+            lblLine3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine3.Location = new Point(40, 471);
             lblLine3.Name = "lblLine3";
-            lblLine3.Size = new Size(38, 15);
+            lblLine3.Size = new Size(42, 13);
             lblLine3.TabIndex = 16;
             lblLine3.Text = "Line 3";
             // 
@@ -343,9 +351,10 @@
             // 
             lblLine2.AutoSize = true;
             lblLine2.BackColor = Color.Lime;
+            lblLine2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine2.Location = new Point(40, 177);
             lblLine2.Name = "lblLine2";
-            lblLine2.Size = new Size(38, 15);
+            lblLine2.Size = new Size(42, 13);
             lblLine2.TabIndex = 15;
             lblLine2.Text = "Line 2";
             // 
@@ -353,16 +362,17 @@
             // 
             lblLine1.AutoSize = true;
             lblLine1.BackColor = Color.Blue;
-            lblLine1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLine1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             lblLine1.Location = new Point(40, 322);
             lblLine1.Name = "lblLine1";
-            lblLine1.Size = new Size(40, 15);
+            lblLine1.Size = new Size(42, 13);
             lblLine1.TabIndex = 14;
             lblLine1.Text = "Line 1";
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.None;
+            panel2.BackColor = Color.DimGray;
             panel2.Controls.Add(pictureBox11);
             panel2.Controls.Add(pictureBox13);
             panel2.Controls.Add(pictureBox1);
