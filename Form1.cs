@@ -17,6 +17,7 @@ namespace Slot777
         private const int MinBet = 1;
         private int bet = 1;
         private int spinCount = 0;
+        private long jackpot = 500;
 
         public Form1()
         {
