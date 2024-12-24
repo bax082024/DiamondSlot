@@ -123,16 +123,21 @@ namespace Slot777
 
         private void btnAddBet_Click(object sender, EventArgs e)
         {
-            if (bet < credits)
+            if (bet < MaxBet && bet < credits)
             {
-                bet += 1; // Increse bet 
-                UpdateUI(); // refresh ui to show ne bet
+                bet += 1; // Increase the bet
+                UpdateUI(); // Refresh UI to show the updated bet
+            }
+            else if (bet >= MaxBet)
+            {
+                MessageBox.Show($"The maximum bet is {MaxBet}!", "Max Bet Reached", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 MessageBox.Show("Bet cannot exceed your available credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
 
         private void btnDecreaseBet_Click(object sender, EventArgs e)
         {
