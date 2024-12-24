@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -37,6 +38,7 @@
             button1 = new Button();
             btnAddBet = new Button();
             btnDecreaseBet = new Button();
+            spinTimer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -150,6 +152,10 @@
             btnDecreaseBet.UseVisualStyleBackColor = false;
             btnDecreaseBet.Click += btnDecreaseBet_Click;
             // 
+            // spinTimer
+            // 
+            spinTimer.Tick += spinTimer_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -186,5 +192,6 @@
         private Button button1;
         private Button btnAddBet;
         private Button btnDecreaseBet;
+        private System.Windows.Forms.Timer spinTimer;
     }
 }

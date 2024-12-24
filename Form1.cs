@@ -119,11 +119,11 @@ namespace Slot777
             if (bet < credits)
             {
                 bet += 1; // Increse bet 
-                UpdateUI() ; // refresh ui to show ne bet
+                UpdateUI(); // refresh ui to show ne bet
             }
             else
             {
-                MessageBox.Show("Bet cannot exceed your available credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
+                MessageBox.Show("Bet cannot exceed your available credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -138,6 +138,16 @@ namespace Slot777
             {
                 MessageBox.Show("Bet limit reached.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void spinTimer_Tick(object sender, EventArgs e)
+        {
+            // Spin the reels by assigning random images
+            pictureBox1.Image = imageCache[random.Next(1, imageCache.Count + 1)];
+            pictureBox2.Image = imageCache[random.Next(1, imageCache.Count + 1)];
+            pictureBox3.Image = imageCache[random.Next(1, imageCache.Count + 1)];
+
+            spinCount++;
         }
     }
 }
