@@ -52,4 +52,4 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 
 ## ScreenShot
 
-- [game](/Images/thegame.png)
+- ![game](/Images/thegame.png)
