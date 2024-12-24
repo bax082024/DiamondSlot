@@ -78,39 +78,40 @@ namespace Slot777
             // Check for cherries
             if (p1 == 3 && p2 != 3 && p3 != 3) // 1 cherry on Reel 1
             {
-                total += bet; // Return the bet
+                total += bet; // Bet returned
             }
             else if (p1 == 3 && p2 == 3 && p3 != 3) // 2 cherries on Reel 1 and Reel 2
             {
-                total += bet + 2; // Bet + 2
+                total += bet + (2 * bet); // Bet returned + 2 times bet
             }
             else if (p1 == 3 && p2 == 3 && p3 == 3) // 3 cherries on all reels
             {
-                total += 20; // Default payout for 3 cherries
+                total += 15 * bet; // 15 times the bet
             }
 
             // Regular paytable: All symbols must match on all 3 reels
             else if (p1 == 1 && p2 == 1 && p3 == 1) // Example: Grapes (symbol 1)
             {
-                total += 20;
+                total += 20 * bet; // 20 times the bet
             }
-            else if (p1 == 3 && p2 == 3 && p3 == 3) // Example: Bells (symbol 3)
+            else if (p1 == 2 && p2 == 2 && p3 == 2) // Example: Bells (symbol 2)
             {
-                total += 30;
+                total += 30 * bet; // 30 times the bet
             }
             else if (p1 == 4 && p2 == 4 && p3 == 4) // Example: Diamonds (symbol 4)
             {
-                total += 50;
+                total += 50 * bet; // 50 times the bet
             }
             else if (p1 == 5 && p2 == 5 && p3 == 5) // Jackpot symbols (symbol 5)
             {
-                total += 100; // Fixed jackpot prize
+                total += 100 * bet; // Jackpot prize scaled with bet
                 MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             // Update credits
             credits += total;
         }
+
 
 
 
@@ -240,16 +241,7 @@ namespace Slot777
 
         private void btnPaytable_Click(object sender, EventArgs e)
         {
-            string paytable = "Paytable:\n" +
-                      "- 1 Cherry on Reel 1: Bet back\n" +
-                      "- 2 Cherries on Reel 1 & 2: Bet + 2 back\n" +
-                      "- 3 Cherries: Win 15\n" +
-                      "- 3 Grapes: Win 20\n" +
-                      "- 3 Bells: Win 30\n" +
-                      "- 3 Diamonds: Win 50\n" +
-                      "- 3 Jackpot Symbols: Win 100";
-
-            MessageBox.Show(paytable, "Paytable", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
     }
 }

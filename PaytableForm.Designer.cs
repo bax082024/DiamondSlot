@@ -38,6 +38,8 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -50,7 +52,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources._1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(30, 207);
+            pictureBox1.Location = new Point(75, 200);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(41, 37);
             pictureBox1.TabIndex = 0;
@@ -61,7 +63,7 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources._2;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(30, 128);
+            pictureBox2.Location = new Point(75, 121);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(41, 37);
             pictureBox2.TabIndex = 1;
@@ -72,7 +74,7 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = Properties.Resources._3;
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(30, 369);
+            pictureBox3.Location = new Point(75, 362);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(41, 37);
             pictureBox3.TabIndex = 2;
@@ -83,7 +85,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = Properties.Resources._4;
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox4.Location = new Point(30, 288);
+            pictureBox4.Location = new Point(75, 281);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(41, 37);
             pictureBox4.TabIndex = 3;
@@ -94,7 +96,7 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._51;
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(30, 48);
+            pictureBox5.Location = new Point(75, 41);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(41, 37);
             pictureBox5.TabIndex = 4;
@@ -103,8 +105,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ButtonFace;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(87, 61);
+            label1.Location = new Point(132, 54);
             label1.Name = "label1";
             label1.Size = new Size(90, 15);
             label1.TabIndex = 5;
@@ -113,8 +116,9 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = SystemColors.ButtonFace;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(96, 150);
+            label2.Location = new Point(132, 133);
             label2.Name = "label2";
             label2.Size = new Size(119, 15);
             label2.TabIndex = 6;
@@ -123,8 +127,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = SystemColors.ButtonFace;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(96, 229);
+            label3.Location = new Point(132, 210);
             label3.Name = "label3";
             label3.Size = new Size(100, 15);
             label3.TabIndex = 7;
@@ -133,8 +138,9 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = SystemColors.ButtonFace;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(96, 310);
+            label4.Location = new Point(132, 292);
             label4.Name = "label4";
             label4.Size = new Size(121, 15);
             label4.TabIndex = 8;
@@ -143,18 +149,46 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(96, 391);
+            label5.BackColor = SystemColors.ButtonFace;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.Location = new Point(132, 362);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(152, 15);
             label5.TabIndex = 9;
-            label5.Text = "label5";
+            label5.Text = "1x Cherrie = Bet returned";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.ButtonFace;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.Location = new Point(132, 384);
+            label6.Name = "label6";
+            label6.Size = new Size(214, 15);
+            label6.TabIndex = 10;
+            label6.Text = "2x Cherrie = Bet returned + 2 credits";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = SystemColors.ButtonFace;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.Location = new Point(132, 408);
+            label7.Name = "label7";
+            label7.Size = new Size(137, 15);
+            label7.TabIndex = 11;
+            label7.Text = "3x Cherrie =  15 credits";
             // 
             // PaytableForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonFace;
+            BackgroundImage = Properties.Resources.bg2;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(413, 450);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -188,5 +222,7 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
+        private Label label7;
     }
 }
