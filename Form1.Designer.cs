@@ -60,6 +60,11 @@
             lblLine3 = new Label();
             lblLine4 = new Label();
             lblLine5 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -148,7 +153,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label3.ForeColor = Color.SandyBrown;
-            label3.Location = new Point(957, 616);
+            label3.Location = new Point(423, 575);
             label3.Name = "label3";
             label3.Size = new Size(59, 20);
             label3.TabIndex = 5;
@@ -221,6 +226,11 @@
             // 
             panel1.BackColor = Color.DarkSlateGray;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label8);
             panel1.Controls.Add(lblLine5);
             panel1.Controls.Add(lblLine4);
             panel1.Controls.Add(lblLine3);
@@ -435,6 +445,7 @@
             // lblLine2
             // 
             lblLine2.AutoSize = true;
+            lblLine2.BackColor = Color.Lime;
             lblLine2.Location = new Point(40, 177);
             lblLine2.Name = "lblLine2";
             lblLine2.Size = new Size(38, 15);
@@ -444,6 +455,7 @@
             // lblLine3
             // 
             lblLine3.AutoSize = true;
+            lblLine3.BackColor = Color.Red;
             lblLine3.Location = new Point(40, 471);
             lblLine3.Name = "lblLine3";
             lblLine3.Size = new Size(38, 15);
@@ -453,6 +465,7 @@
             // lblLine4
             // 
             lblLine4.AutoSize = true;
+            lblLine4.BackColor = Color.FromArgb(255, 128, 0);
             lblLine4.Location = new Point(40, 593);
             lblLine4.Name = "lblLine4";
             lblLine4.Size = new Size(38, 15);
@@ -462,11 +475,63 @@
             // lblLine5
             // 
             lblLine5.AutoSize = true;
+            lblLine5.BackColor = Color.FromArgb(128, 128, 255);
             lblLine5.Location = new Point(40, 68);
             lblLine5.Name = "lblLine5";
             lblLine5.Size = new Size(38, 15);
             lblLine5.TabIndex = 18;
             lblLine5.Text = "Line 5";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.FromArgb(128, 128, 255);
+            label4.Location = new Point(965, 68);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 23;
+            label4.Text = "Line 5";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(255, 128, 0);
+            label5.Location = new Point(965, 593);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 15);
+            label5.TabIndex = 22;
+            label5.Text = "Line 4";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Red;
+            label6.Location = new Point(965, 471);
+            label6.Name = "label6";
+            label6.Size = new Size(38, 15);
+            label6.TabIndex = 21;
+            label6.Text = "Line 3";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Lime;
+            label7.Location = new Point(965, 177);
+            label7.Name = "label7";
+            label7.Size = new Size(38, 15);
+            label7.TabIndex = 20;
+            label7.Text = "Line 2";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Blue;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(965, 322);
+            label8.Name = "label8";
+            label8.Size = new Size(40, 15);
+            label8.TabIndex = 19;
+            label8.Text = "Line 1";
             // 
             // Form1
             // 
@@ -533,5 +598,10 @@
         private Label lblLine3;
         private Label lblLine2;
         private Label lblLine1;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
     }
 }
