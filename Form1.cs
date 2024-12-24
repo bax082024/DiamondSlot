@@ -41,7 +41,8 @@ namespace Slot777
 
         private void LoadImages()
         {
-            for (int i = 1; i <= 3; i++)
+            int numberOfImages = 5; // Update this to the total number of images
+            for (int i = 1; i <= numberOfImages; i++)
             {
                 string fileName = $"{i}.png";
                 if (File.Exists(fileName))
@@ -58,9 +59,10 @@ namespace Slot777
         private void SpinReels()
         {
             // Generate random numbers for each reel
-            p1 = random.Next(1, 4);
-            p2 = random.Next(1, 4);
-            p3 = random.Next(1, 4);
+            int maxImageIndex = imageCache.Count;
+            p1 = random.Next(1, maxImageIndex + 1);
+            p2 = random.Next(1, maxImageIndex + 1);
+            p3 = random.Next(1, maxImageIndex + 1);
 
             // Assign corresponding images
             pictureBox1.Image = imageCache[p1];
