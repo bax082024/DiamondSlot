@@ -266,6 +266,10 @@ namespace Slot777
 
         private void UpdateLineLabels()
         {
+            Label[] leftLabels = { lblLine1, lblLine2, lblLine3, lblLine4, lblLine5 };
+            Label[] rightLabels = { lblLine6, lblLine7, lblLine8, lblLine9, lblLine10 };
+
+            
 
         }
 
