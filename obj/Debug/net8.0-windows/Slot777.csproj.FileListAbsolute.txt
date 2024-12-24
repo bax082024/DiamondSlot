@@ -63,6 +63,7 @@ C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\bin\Debug\net8.0-windows\Slot777.
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Interop.WMPLib.dll
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.csproj.ResolveComReference.cache
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.Form1.resources
+C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.PaytableForm.resources
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.Properties.Resources.resources
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.csproj.GenerateResource.cache
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.GeneratedMSBuildEditorConfig.editorconfig
@@ -75,4 +76,3 @@ C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\refint\S
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.pdb
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.genruntimeconfig.cache
 C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\ref\Slot777.dll
-C:\HjemmeKode\C-Sharp\MyProjects\SlotMachineV3\obj\Debug\net8.0-windows\Slot777.PaytableForm.resources

@@ -6,9 +6,8 @@ namespace Slot777
     {
         private static readonly Random random = new();
         private readonly Dictionary<int, Image> imageCache = new();
-        private List<PictureBox> reels = new List<PictureBox>(); // Add this declaration
+        private List<PictureBox> reels = new List<PictureBox>();
 
-        private int p1, p2, p3;
         private long credits = 100;
         private long total = 0;
         private const int MaxBet = 10;
@@ -16,6 +15,10 @@ namespace Slot777
         private int bet = 1;
         private int spinCount = 0;
         private long jackpot = 500;
+
+        // Lines and active line tracking
+        private bool[] activeLines = new bool[5]; // 5 lines available
+        private int activeLineCount = 1; // Minimum 1 active line
 
         public Form1()
         {
@@ -41,9 +44,12 @@ namespace Slot777
                 reels[i].Image = imageCache[(i % imageCache.Count) + 1];
             }
 
+            // Initialize active lines (default: only Line 1 is active)
+            activeLines[0] = true;
+
+            UpdateLineLabels();
             UpdateUI();
         }
-
 
         private void LoadImages()
         {
@@ -86,8 +92,11 @@ namespace Slot777
                 new int[] { 10, 6, 2, 8, 14 }
             };
 
-            foreach (var line in lines)
+            for (int i = 0; i < lines.Length; i++)
             {
+                if (!activeLines[i]) continue; // Skip inactive lines
+
+                var line = lines[i];
                 int firstSymbol = GetSymbolIndex(line[0]);
                 bool isWinLine = true;
 
@@ -102,6 +111,7 @@ namespace Slot777
 
                 if (isWinLine)
                 {
+                    // Calculate payouts
                     if (firstSymbol == 1) total += 20 * bet;
                     else if (firstSymbol == 2) total += 30 * bet;
                     else if (firstSymbol == 3) total += 15 * bet;
@@ -129,20 +139,42 @@ namespace Slot777
             return -1;
         }
 
-
-
-
-
-
         private void UpdateUI()
         {
             label1.Text = $"Credits: {credits}";
             label2.Text = $"Bet: {bet}";
             label3.Text = $"Win: {total}";
-            labelJackpot.Text = $"Jackpot: {jackpot}"; // Example usage
+            labelJackpot.Text = $"Jackpot: {jackpot}";
+            lblActiveLines.Text = $"Active Lines: {activeLineCount}";
         }
 
+        private void UpdateLineLabels()
+        {
+            Label[] leftLabels = { lblLine1, lblLine2, lblLine3, lblLine4, lblLine5 };
+            Label[] rightLabels = { lblLine6, lblLine7, lblLine8, lblLine9, lblLine10 };
 
+            for (int i = 0; i < activeLines.Length; i++)
+            {
+                if (activeLines[i])
+                {
+                    leftLabels[i].ForeColor = Color.White; // Active lines in white
+                    rightLabels[i].ForeColor = Color.White;
+                }
+                else
+                {
+                    leftLabels[i].ForeColor = Color.Gray; // Inactive lines in gray
+                    rightLabels[i].ForeColor = Color.Gray;
+                }
+
+                // Adjust font size and alignment
+                leftLabels[i].Font = new Font("Arial", 12, FontStyle.Bold); // Bigger and bolder
+                rightLabels[i].Font = new Font("Arial", 12, FontStyle.Bold);
+
+                // Adjust label size
+                leftLabels[i].AutoSize = true;
+                rightLabels[i].AutoSize = true;
+            }
+        }
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -157,29 +189,17 @@ namespace Slot777
 
             if (credits >= bet)
             {
-                // Deduct the bet
                 credits -= bet;
-
-
-
-                // Spin the reels
                 SpinReels();
-
-                // Start the spin animation
-                spinCount = 0; // Reset the spin count
+                spinCount = 0;
                 spinTimer.Start();
-
-                // Calculate win
                 CalculateWin();
-
-                // Update the UI
                 UpdateUI();
 
-                // Game Over Check
                 if (credits <= 0)
                 {
                     MessageBox.Show("Game Over! No more credits.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    credits = 100; // Reset credits
+                    credits = 100;
                     UpdateUI();
                 }
             }
@@ -193,8 +213,8 @@ namespace Slot777
         {
             if (bet < MaxBet && bet < credits)
             {
-                bet += 1; // Increase the bet
-                UpdateUI(); // Refresh UI to show the updated bet
+                bet += 1;
+                UpdateUI();
             }
             else if (bet >= MaxBet)
             {
@@ -205,7 +225,6 @@ namespace Slot777
                 MessageBox.Show("Bet cannot exceed your available credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
 
         private void btnDecreaseBet_Click(object sender, EventArgs e)
         {
@@ -250,39 +269,14 @@ namespace Slot777
         private void PlaySound()
         {
             WindowsMediaPlayer player = new WindowsMediaPlayer();
-            player.URL = "Sound/spin.mp3"; // Provide the path to your MP3 file
+            player.URL = "Sound/spin.mp3";
             player.controls.play();
         }
 
-        // connect button to paytable form
         private void btnPaytable_Click(object sender, EventArgs e)
         {
-            // Create an instance of the PaytableForm
             PaytableForm paytableForm = new PaytableForm();
-
-            // Show the PaytableForm as a dialog
             paytableForm.ShowDialog();
-        }
-
-        private void UpdateLineLabels()
-        {
-            Label[] leftLabels = { lblLine1, lblLine2, lblLine3, lblLine4, lblLine5 };
-            Label[] rightLabels = { lblLine6, lblLine7, lblLine8, lblLine9, lblLine10 };
-
-            for (int i = 0; i < activeLines.Length; i++)
-            {
-                if (activeLines[i])
-                {
-                    leftLabels[i].ForeColor = Color.White; // Active lines in white
-                    rightLabels[i].ForeColor = Color.White;
-                }
-                else
-                {
-                    leftLabels[i].ForeColor = Color.Gray; // Inactive lines in gray
-                    rightLabels[i].ForeColor = Color.Gray;
-                }
-            }
-
         }
 
         private void btnIncreaseLines_Click(object sender, EventArgs e)
@@ -290,21 +284,21 @@ namespace Slot777
             if (activeLineCount < activeLines.Length)
             {
                 activeLineCount++;
-                activeLines[activeLineCount - 1] = true; // Activate the next line
+                activeLines[activeLineCount - 1] = true;
                 UpdateLineLabels();
                 UpdateUI();
             }
             else
             {
-                MessageBox.Show("All lines are allready active!", "Max Lines.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("All lines are already active!", "Max Lines", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void btnDecreaseLines_Click(object sender, EventArgs e)
         {
-            if (activeLinesCount > 1)
+            if (activeLineCount > 1)
             {
-                activeLines[activeLineCount - 1] = false; // Deactivate the last active line
+                activeLines[activeLineCount - 1] = false;
                 activeLineCount--;
                 UpdateLineLabels();
                 UpdateUI();
@@ -315,6 +309,4 @@ namespace Slot777
             }
         }
     }
-
-
 }
