@@ -76,15 +76,18 @@ namespace Slot777
             total = 0;
 
             // Basic paytable logic
-            if (p1 == 3) total += 5;
-            if (p1 == 2 && p2 == 2) total += 10;
-            if (p1 == 3 && p2 == 3) total += 10;
-            if (p1 == 1 && p2 == 1 && p3 == 1) total += 20;
-            if (p1 == 2 && p2 == 2 && p3 == 2) total += 30;
-            if (p1 == 3 && p2 == 3 && p3 == 3) total += 50;
+            if (p1 == 4) total += 15; // Example: Bell pays 15
+            if (p1 == 5 && p2 == 5 && p3 == 5) // All Jackpot symbols
+            {
+                total += jackpot; // Add the jackpot amount to the total
+                MessageBox.Show($"JACKPOT! You won {jackpot} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                jackpot = 500; // Reset the jackpot to its base value
+            }
 
             credits += total;
         }
+
 
         private void UpdateUI()
         {
