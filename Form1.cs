@@ -121,7 +121,10 @@ namespace Slot777
                 bet += 1; // Increse bet 
                 UpdateUI() ; // refresh ui to show ne bet
             }
-
+            else
+            {
+                MessageBox.Show("Bet cannot exceed your available credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning) ;
+            }
         }
 
         private void btnDecreaseBet_Click(object sender, EventArgs e)
