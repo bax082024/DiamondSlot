@@ -1,3 +1,5 @@
+using WMPLib;
+
 namespace Slot777
 {
     public partial class Form1 : Form
@@ -87,6 +89,8 @@ namespace Slot777
 
         private void button1_Click(object sender, EventArgs e)
         {
+            PlaySound();
+
             if (credits >= bet)
             {
                 // Deduct the bet
@@ -143,6 +147,8 @@ namespace Slot777
 
         private void spinTimer_Tick(object sender, EventArgs e)
         {
+            PlaySound();
+
             // Spin the reels by assigning random images
             pictureBox1.Image = imageCache[random.Next(1, imageCache.Count + 1)];
             pictureBox2.Image = imageCache[random.Next(1, imageCache.Count + 1)];
@@ -169,6 +175,13 @@ namespace Slot777
                     UpdateUI();
                 }
             }
+        }
+
+        private void PlaySound()
+        {
+            WindowsMediaPlayer player = new WindowsMediaPlayer();
+            player.URL = "Sound/spin.mp3"; // Provide the path to your MP3 file
+            player.controls.play();
         }
     }
 }
