@@ -134,6 +134,10 @@ namespace Slot777
                 bet -= 1;
                 UpdateUI();
             }
+            else
+            {
+                MessageBox.Show("Bet limit reached.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
