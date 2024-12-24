@@ -131,7 +131,7 @@
             // 
             button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.LawnGreen;
-            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(220, 365);
             button1.Name = "button1";
