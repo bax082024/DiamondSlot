@@ -130,7 +130,7 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.YellowGreen;
+            button1.BackColor = Color.LawnGreen;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(220, 365);
@@ -217,6 +217,8 @@
             // 
             panel1.Anchor = AnchorStyles.None;
             panel1.BackColor = Color.DarkSlateGray;
+            panel1.BackgroundImage = Properties.Resources.bg2;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(btnPaytable);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox5);
