@@ -56,4 +56,13 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 
 ---
 
+## Setup Instructions
+
+**Prerequisites
+- **Development Environment:**
+	- Visual Studio or compatible C# IDE
+- **Dependencies:**
+	- Windows Forms Framework
+	- `WMPLib` for sound effects. (right click project - Add Project Reference - Windows media player).
+
 
