@@ -19,7 +19,10 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 ---
 
 ## Customizations
+
 - Configurable Win Rates: Easily tweak the win rate by adjusting symbol weights.
 - Custom **Backgrounds and Icons:** Background textures and icon images can be replaced with custom designs.
 
+## Sound Effects
 
+- Includes dynamic sound effects for spins adding to the excitement.
