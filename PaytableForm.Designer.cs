@@ -40,11 +40,16 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -52,7 +57,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources._1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(75, 200);
+            pictureBox1.Location = new Point(73, 238);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(41, 37);
             pictureBox1.TabIndex = 0;
@@ -63,7 +68,7 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources._2;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(75, 121);
+            pictureBox2.Location = new Point(73, 159);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(41, 37);
             pictureBox2.TabIndex = 1;
@@ -74,7 +79,7 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = Properties.Resources._3;
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Location = new Point(75, 362);
+            pictureBox3.Location = new Point(73, 400);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(41, 37);
             pictureBox3.TabIndex = 2;
@@ -85,7 +90,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = Properties.Resources._4;
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox4.Location = new Point(75, 281);
+            pictureBox4.Location = new Point(73, 319);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(41, 37);
             pictureBox4.TabIndex = 3;
@@ -96,7 +101,7 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._51;
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(75, 41);
+            pictureBox5.Location = new Point(73, 79);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(41, 37);
             pictureBox5.TabIndex = 4;
@@ -108,7 +113,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label1.ForeColor = Color.SandyBrown;
-            label1.Location = new Point(132, 54);
+            label1.Location = new Point(130, 92);
             label1.Name = "label1";
             label1.Size = new Size(111, 16);
             label1.TabIndex = 5;
@@ -120,7 +125,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label2.ForeColor = Color.SandyBrown;
-            label2.Location = new Point(132, 133);
+            label2.Location = new Point(130, 171);
             label2.Name = "label2";
             label2.Size = new Size(144, 16);
             label2.TabIndex = 6;
@@ -132,7 +137,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label3.ForeColor = Color.SandyBrown;
-            label3.Location = new Point(132, 210);
+            label3.Location = new Point(130, 248);
             label3.Name = "label3";
             label3.Size = new Size(117, 16);
             label3.TabIndex = 7;
@@ -144,7 +149,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label4.ForeColor = Color.SandyBrown;
-            label4.Location = new Point(132, 292);
+            label4.Location = new Point(130, 330);
             label4.Name = "label4";
             label4.Size = new Size(143, 16);
             label4.TabIndex = 8;
@@ -156,7 +161,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label5.ForeColor = Color.SandyBrown;
-            label5.Location = new Point(132, 362);
+            label5.Location = new Point(130, 400);
             label5.Name = "label5";
             label5.Size = new Size(176, 16);
             label5.TabIndex = 9;
@@ -168,7 +173,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label6.ForeColor = Color.SandyBrown;
-            label6.Location = new Point(132, 384);
+            label6.Location = new Point(130, 422);
             label6.Name = "label6";
             label6.Size = new Size(251, 16);
             label6.TabIndex = 10;
@@ -180,11 +185,46 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
             label7.ForeColor = Color.SandyBrown;
-            label7.Location = new Point(132, 408);
+            label7.Location = new Point(130, 446);
             label7.Name = "label7";
             label7.Size = new Size(163, 16);
             label7.TabIndex = 11;
             label7.Text = "3x Cherrie =  15 credits";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.BackgroundImage = Properties.Resources.winner;
+            pictureBox6.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox6.Location = new Point(360, 12);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(41, 37);
+            pictureBox6.TabIndex = 12;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.BackgroundImage = Properties.Resources.winner;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox7.Location = new Point(12, 12);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(41, 37);
+            pictureBox7.TabIndex = 13;
+            pictureBox7.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BorderStyle = BorderStyle.FixedSingle;
+            label8.FlatStyle = FlatStyle.Popup;
+            label8.Font = new Font("Stencil", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.IndianRed;
+            label8.Location = new Point(130, 20);
+            label8.Name = "label8";
+            label8.Size = new Size(139, 31);
+            label8.TabIndex = 14;
+            label8.Text = "PAYTABLE";
             // 
             // PaytableForm
             // 
@@ -192,7 +232,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(413, 450);
+            ClientSize = new Size(413, 485);
+            Controls.Add(label8);
+            Controls.Add(pictureBox7);
+            Controls.Add(pictureBox6);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -212,6 +255,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -230,5 +275,8 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private Label label8;
     }
 }
