@@ -41,6 +41,8 @@
             spinTimer = new System.Windows.Forms.Timer(components);
             labelJackpot = new Label();
             panel1 = new Panel();
+            pictureBox29 = new PictureBox();
+            pictureBox28 = new PictureBox();
             pictureBox27 = new PictureBox();
             pictureBox26 = new PictureBox();
             pictureBox25 = new PictureBox();
@@ -80,12 +82,12 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
-            pictureBox28 = new PictureBox();
-            pictureBox29 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox29).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
@@ -111,8 +113,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -208,7 +208,7 @@
             // btnAddBet
             // 
             btnAddBet.Anchor = AnchorStyles.None;
-            btnAddBet.BackColor = Color.DarkOliveGreen;
+            btnAddBet.BackColor = Color.Khaki;
             btnAddBet.BackgroundImage = Properties.Resources.plus;
             btnAddBet.BackgroundImageLayout = ImageLayout.Stretch;
             btnAddBet.FlatStyle = FlatStyle.Flat;
@@ -219,11 +219,12 @@
             btnAddBet.Size = new Size(15, 15);
             btnAddBet.TabIndex = 7;
             btnAddBet.UseVisualStyleBackColor = false;
+            btnAddBet.Click += btnAddBet_Click;
             // 
             // btnDecreaseBet
             // 
             btnDecreaseBet.Anchor = AnchorStyles.None;
-            btnDecreaseBet.BackColor = Color.DarkOliveGreen;
+            btnDecreaseBet.BackColor = Color.Khaki;
             btnDecreaseBet.BackgroundImage = Properties.Resources.minus;
             btnDecreaseBet.BackgroundImageLayout = ImageLayout.Stretch;
             btnDecreaseBet.FlatStyle = FlatStyle.Flat;
@@ -301,6 +302,28 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
             panel1.TabIndex = 12;
+            // 
+            // pictureBox29
+            // 
+            pictureBox29.Anchor = AnchorStyles.None;
+            pictureBox29.BackgroundImage = Properties.Resources.scepter;
+            pictureBox29.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox29.Location = new Point(965, 230);
+            pictureBox29.Name = "pictureBox29";
+            pictureBox29.Size = new Size(73, 62);
+            pictureBox29.TabIndex = 41;
+            pictureBox29.TabStop = false;
+            // 
+            // pictureBox28
+            // 
+            pictureBox28.Anchor = AnchorStyles.None;
+            pictureBox28.BackgroundImage = Properties.Resources.scepter;
+            pictureBox28.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox28.Location = new Point(12, 505);
+            pictureBox28.Name = "pictureBox28";
+            pictureBox28.Size = new Size(73, 62);
+            pictureBox28.TabIndex = 40;
+            pictureBox28.TabStop = false;
             // 
             // pictureBox27
             // 
@@ -428,7 +451,7 @@
             // btnDecreaseLines
             // 
             btnDecreaseLines.Anchor = AnchorStyles.None;
-            btnDecreaseLines.BackColor = Color.DarkOliveGreen;
+            btnDecreaseLines.BackColor = Color.Khaki;
             btnDecreaseLines.BackgroundImage = Properties.Resources.minus;
             btnDecreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
             btnDecreaseLines.FlatStyle = FlatStyle.Flat;
@@ -445,7 +468,7 @@
             // btnIncreaseLines
             // 
             btnIncreaseLines.Anchor = AnchorStyles.None;
-            btnIncreaseLines.BackColor = Color.DarkOliveGreen;
+            btnIncreaseLines.BackColor = Color.Khaki;
             btnIncreaseLines.BackgroundImage = Properties.Resources.plus;
             btnIncreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
             btnIncreaseLines.FlatStyle = FlatStyle.Flat;
@@ -781,37 +804,15 @@
             // btnPaytable
             // 
             btnPaytable.Anchor = AnchorStyles.None;
-            btnPaytable.BackColor = Color.SeaGreen;
-            btnPaytable.FlatStyle = FlatStyle.Flat;
-            btnPaytable.Location = new Point(849, 636);
+            btnPaytable.BackColor = Color.DarkSlateGray;
+            btnPaytable.FlatStyle = FlatStyle.Popup;
+            btnPaytable.Location = new Point(890, 636);
             btnPaytable.Name = "btnPaytable";
             btnPaytable.Size = new Size(75, 25);
             btnPaytable.TabIndex = 12;
             btnPaytable.Text = "Paytable";
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
-            // 
-            // pictureBox28
-            // 
-            pictureBox28.Anchor = AnchorStyles.None;
-            pictureBox28.BackgroundImage = Properties.Resources.scepter;
-            pictureBox28.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox28.Location = new Point(12, 505);
-            pictureBox28.Name = "pictureBox28";
-            pictureBox28.Size = new Size(73, 62);
-            pictureBox28.TabIndex = 40;
-            pictureBox28.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            pictureBox29.Anchor = AnchorStyles.None;
-            pictureBox29.BackgroundImage = Properties.Resources.scepter;
-            pictureBox29.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox29.Location = new Point(965, 230);
-            pictureBox29.Name = "pictureBox29";
-            pictureBox29.Size = new Size(73, 62);
-            pictureBox29.TabIndex = 41;
-            pictureBox29.TabStop = false;
             // 
             // Form1
             // 
@@ -830,6 +831,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox29).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
@@ -855,8 +858,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).EndInit();
             ResumeLayout(false);
         }
 

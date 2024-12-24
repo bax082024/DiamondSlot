@@ -83,49 +83,50 @@ namespace Slot777
         {
             total = 0;
 
+            // Define the lines
             int[][] lines = new int[][]
             {
-                new int[] { 0, 1, 2, 3, 4 },
-                new int[] { 5, 6, 7, 8, 9 },
-                new int[] { 10, 11, 12, 13, 14 },
-                new int[] { 0, 6, 12, 8, 4 },
-                new int[] { 10, 6, 2, 8, 14 }
+        new int[] { 0, 1, 2, 3, 4 }, // Top row
+        new int[] { 5, 6, 7, 8, 9 }, // Middle row
+        new int[] { 10, 11, 12, 13, 14 }, // Bottom row
+        new int[] { 0, 6, 12, 8, 4 }, // Diagonal top-left to bottom-right
+        new int[] { 10, 6, 2, 8, 14 } // Diagonal bottom-left to top-right
             };
 
-            for (int i = 0; i < lines.Length; i++)
+            foreach (var (line, isActive) in lines.Zip(activeLines, (line, isActive) => (line, isActive)))
             {
-                if (!activeLines[i]) continue; // Skip inactive lines
+                if (!isActive) continue; // Skip inactive lines
 
-                var line = lines[i];
+                // Check if the first three reels match
                 int firstSymbol = GetSymbolIndex(line[0]);
-                bool isWinLine = true;
-
-                foreach (int index in line)
+                if (firstSymbol != -1 && GetSymbolIndex(line[1]) == firstSymbol && GetSymbolIndex(line[2]) == firstSymbol)
                 {
-                    if (GetSymbolIndex(index) != firstSymbol)
+                    // Calculate winnings based on the first three reels matching
+                    switch (firstSymbol)
                     {
-                        isWinLine = false;
-                        break;
-                    }
-                }
-
-                if (isWinLine)
-                {
-                    // Calculate payouts
-                    if (firstSymbol == 1) total += 20 * bet;
-                    else if (firstSymbol == 2) total += 30 * bet;
-                    else if (firstSymbol == 3) total += 15 * bet;
-                    else if (firstSymbol == 4) total += 50 * bet;
-                    else if (firstSymbol == 5)
-                    {
-                        total += 100 * bet;
-                        MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        case 1: // Example: Grapes
+                            total += 20 * bet;
+                            break;
+                        case 2: // Example: Bells
+                            total += 30 * bet;
+                            break;
+                        case 3: // Example: Cherries
+                            total += 15 * bet;
+                            break;
+                        case 4: // Example: Diamonds
+                            total += 50 * bet;
+                            break;
+                        case 5: // Jackpot symbols
+                            total += 100 * bet;
+                            MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            break;
                     }
                 }
             }
 
-            credits += total;
+            credits += total; // Update credits
         }
+
 
         private int GetSymbolIndex(int reelIndex)
         {
@@ -181,25 +182,37 @@ namespace Slot777
         {
             PlaySound();
 
-            if (bet > credits)
+            int spinCost = activeLineCount * bet; // Total cost of the spin
+
+            if (spinCost > credits)
             {
                 MessageBox.Show("Not enough credits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (credits >= bet)
+            if (credits >= spinCost)
             {
-                credits -= bet;
+                // Deduct the total cost of the spin
+                credits -= spinCost;
+
+                // Spin the reels
                 SpinReels();
-                spinCount = 0;
+
+                // Start the spin animation
+                spinCount = 0; // Reset the spin count
                 spinTimer.Start();
+
+                // Calculate win
                 CalculateWin();
+
+                // Update the UI
                 UpdateUI();
 
+                // Game Over Check
                 if (credits <= 0)
                 {
                     MessageBox.Show("Game Over! No more credits.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    credits = 100;
+                    credits = 100; // Reset credits
                     UpdateUI();
                 }
             }
@@ -211,18 +224,18 @@ namespace Slot777
 
         private void btnAddBet_Click(object sender, EventArgs e)
         {
-            if (bet < MaxBet && bet < credits)
+            if (bet < 3 && (activeLineCount * (bet + 1)) <= credits) // Limit max bet to 3 and ensure enough credits
             {
-                bet += 1;
-                UpdateUI();
+                bet += 1; // Increase the bet
+                UpdateUI(); // Refresh UI to show the updated bet
             }
-            else if (bet >= MaxBet)
+            else if (bet >= 3)
             {
-                MessageBox.Show($"The maximum bet is {MaxBet}!", "Max Bet Reached", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Maximum bet is 3!", "Max Bet Reached", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Bet cannot exceed your available credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Not enough credits for this bet!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
