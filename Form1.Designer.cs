@@ -55,6 +55,11 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
+            lblLine1 = new Label();
+            lblLine2 = new Label();
+            lblLine3 = new Label();
+            lblLine4 = new Label();
+            lblLine5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -216,6 +221,11 @@
             // 
             panel1.BackColor = Color.DarkSlateGray;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(lblLine5);
+            panel1.Controls.Add(lblLine4);
+            panel1.Controls.Add(lblLine3);
+            panel1.Controls.Add(lblLine2);
+            panel1.Controls.Add(lblLine1);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(btnPaytable);
             panel1.Controls.Add(labelJackpot);
@@ -411,6 +421,53 @@
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
             // 
+            // lblLine1
+            // 
+            lblLine1.AutoSize = true;
+            lblLine1.BackColor = Color.Blue;
+            lblLine1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLine1.Location = new Point(40, 322);
+            lblLine1.Name = "lblLine1";
+            lblLine1.Size = new Size(40, 15);
+            lblLine1.TabIndex = 14;
+            lblLine1.Text = "Line 1";
+            // 
+            // lblLine2
+            // 
+            lblLine2.AutoSize = true;
+            lblLine2.Location = new Point(40, 177);
+            lblLine2.Name = "lblLine2";
+            lblLine2.Size = new Size(38, 15);
+            lblLine2.TabIndex = 15;
+            lblLine2.Text = "Line 2";
+            // 
+            // lblLine3
+            // 
+            lblLine3.AutoSize = true;
+            lblLine3.Location = new Point(40, 471);
+            lblLine3.Name = "lblLine3";
+            lblLine3.Size = new Size(38, 15);
+            lblLine3.TabIndex = 16;
+            lblLine3.Text = "Line 3";
+            // 
+            // lblLine4
+            // 
+            lblLine4.AutoSize = true;
+            lblLine4.Location = new Point(40, 593);
+            lblLine4.Name = "lblLine4";
+            lblLine4.Size = new Size(38, 15);
+            lblLine4.TabIndex = 17;
+            lblLine4.Text = "Line 4";
+            // 
+            // lblLine5
+            // 
+            lblLine5.AutoSize = true;
+            lblLine5.Location = new Point(40, 68);
+            lblLine5.Name = "lblLine5";
+            lblLine5.Size = new Size(38, 15);
+            lblLine5.TabIndex = 18;
+            lblLine5.Text = "Line 5";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -471,5 +528,10 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
         private Panel panel2;
+        private Label lblLine5;
+        private Label lblLine4;
+        private Label lblLine3;
+        private Label lblLine2;
+        private Label lblLine1;
     }
 }
