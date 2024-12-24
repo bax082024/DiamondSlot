@@ -43,6 +43,7 @@
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             panel1 = new Panel();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -216,6 +217,7 @@
             // 
             panel1.Anchor = AnchorStyles.None;
             panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox1);
@@ -232,6 +234,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(579, 445);
             panel1.TabIndex = 12;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.SeaGreen;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(486, 404);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 22);
+            button2.TabIndex = 12;
+            button2.Text = "Paytable";
+            button2.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -271,5 +284,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private Panel panel1;
+        private Button button2;
     }
 }

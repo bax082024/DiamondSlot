@@ -75,18 +75,18 @@ namespace Slot777
         {
             total = 0;
 
-            // Special case: Cherries (symbol 2)
-            if (p1 == 2 && p2 != 2 && p3 != 2) // 1 Cherry on the first reel
+            // Check for cherries
+            if (p1 == 3 && p2 != 3 && p3 != 3) // 1 cherry on Reel 1
             {
-                total += bet; // Bet money back
+                total += bet; // Return the bet
             }
-            else if (p1 == 2 && p2 == 2 && p3 != 2) // 2 Cherries
+            else if (p1 == 3 && p2 == 3 && p3 != 3) // 2 cherries on Reel 1 and Reel 2
             {
                 total += bet + 2; // Bet + 2
             }
-            else if (p1 == 2 && p2 == 2 && p3 == 2) // 3 Cherries
+            else if (p1 == 3 && p2 == 3 && p3 == 3) // 3 cherries on all reels
             {
-                total += 15; // Larger payout for 3 Cherries
+                total += 20; // Default payout for 3 cherries
             }
 
             // Regular paytable: All symbols must match on all 3 reels
