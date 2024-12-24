@@ -81,7 +81,7 @@ namespace Slot777
             label3.Text = $"Win: {total}";
         }
 
-        
+
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -112,6 +112,21 @@ namespace Slot777
             {
                 MessageBox.Show("Not enough credits!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnAddBet_Click(object sender, EventArgs e)
+        {
+            if (bet < credits)
+            {
+                bet += 1; // Increse bet 
+                UpdateUI() ; // refresh ui to show ne bet
+            }
+
+        }
+
+        private void btnDecreaseBet_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

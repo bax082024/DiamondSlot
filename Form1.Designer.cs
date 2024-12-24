@@ -35,8 +35,8 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnAddBet = new Button();
+            btnDecreaseBet = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -90,7 +90,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.LemonChiffon;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(70, 189);
+            label2.Location = new Point(37, 205);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
             label2.TabIndex = 4;
@@ -119,34 +119,36 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // button2
+            // btnAddBet
             // 
-            button2.BackColor = Color.Silver;
-            button2.BackgroundImage = Properties.Resources.plus;
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button2.ImageAlign = ContentAlignment.TopLeft;
-            button2.Location = new Point(95, 207);
-            button2.Name = "button2";
-            button2.Size = new Size(15, 15);
-            button2.TabIndex = 7;
-            button2.UseVisualStyleBackColor = false;
+            btnAddBet.BackColor = Color.Silver;
+            btnAddBet.BackgroundImage = Properties.Resources.plus;
+            btnAddBet.BackgroundImageLayout = ImageLayout.Stretch;
+            btnAddBet.FlatStyle = FlatStyle.Flat;
+            btnAddBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnAddBet.ImageAlign = ContentAlignment.TopLeft;
+            btnAddBet.Location = new Point(62, 223);
+            btnAddBet.Name = "btnAddBet";
+            btnAddBet.Size = new Size(15, 15);
+            btnAddBet.TabIndex = 7;
+            btnAddBet.UseVisualStyleBackColor = false;
+            btnAddBet.Click += btnAddBet_Click;
             // 
-            // button3
+            // btnDecreaseBet
             // 
-            button3.BackColor = Color.Silver;
-            button3.BackgroundImage = Properties.Resources.minus;
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button3.ImageAlign = ContentAlignment.TopLeft;
-            button3.Location = new Point(70, 207);
-            button3.Name = "button3";
-            button3.Size = new Size(15, 15);
-            button3.TabIndex = 8;
-            button3.Text = "-";
-            button3.UseVisualStyleBackColor = false;
+            btnDecreaseBet.BackColor = Color.Silver;
+            btnDecreaseBet.BackgroundImage = Properties.Resources.minus;
+            btnDecreaseBet.BackgroundImageLayout = ImageLayout.Stretch;
+            btnDecreaseBet.FlatStyle = FlatStyle.Flat;
+            btnDecreaseBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnDecreaseBet.ImageAlign = ContentAlignment.TopLeft;
+            btnDecreaseBet.Location = new Point(37, 223);
+            btnDecreaseBet.Name = "btnDecreaseBet";
+            btnDecreaseBet.Size = new Size(15, 15);
+            btnDecreaseBet.TabIndex = 8;
+            btnDecreaseBet.Text = "-";
+            btnDecreaseBet.UseVisualStyleBackColor = false;
+            btnDecreaseBet.Click += btnDecreaseBet_Click;
             // 
             // Form1
             // 
@@ -154,8 +156,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(509, 343);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnDecreaseBet);
+            Controls.Add(btnAddBet);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -182,7 +184,7 @@
         private Label label2;
         private Label label3;
         private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnAddBet;
+        private Button btnDecreaseBet;
     }
 }
