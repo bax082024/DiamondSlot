@@ -65,4 +65,12 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 	- Windows Forms Framework
 	- `WMPLib` for sound effects. (right click project - Add Project Reference - Windows media player).
 
+## Steps
+
+1. Clone Repository : https://github.com/bax082024/DiamondSlot.git
+2. **cd DiamondSlot**
+3. Ensure all images for the symbols are in the same directory as the executable:
+	- File format: `1.png`, `2.png`, etc
+4. Run Project.
+
 
