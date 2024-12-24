@@ -40,9 +40,13 @@
             btnDecreaseBet = new Button();
             spinTimer = new System.Windows.Forms.Timer(components);
             label4 = new Label();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -124,7 +128,7 @@
             // 
             // btnAddBet
             // 
-            btnAddBet.BackColor = Color.Silver;
+            btnAddBet.BackColor = Color.DarkOliveGreen;
             btnAddBet.BackgroundImage = Properties.Resources.plus;
             btnAddBet.BackgroundImageLayout = ImageLayout.Stretch;
             btnAddBet.FlatStyle = FlatStyle.Flat;
@@ -139,7 +143,7 @@
             // 
             // btnDecreaseBet
             // 
-            btnDecreaseBet.BackColor = Color.Silver;
+            btnDecreaseBet.BackColor = Color.DarkOliveGreen;
             btnDecreaseBet.BackgroundImage = Properties.Resources.minus;
             btnDecreaseBet.BackgroundImageLayout = ImageLayout.Stretch;
             btnDecreaseBet.FlatStyle = FlatStyle.Flat;
@@ -169,12 +173,34 @@
             label4.TabIndex = 9;
             label4.Text = "Jackpot 500";
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = Properties.Resources._5;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(183, 56);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(55, 50);
+            pictureBox4.TabIndex = 10;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackgroundImage = Properties.Resources._5;
+            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox5.Location = new Point(534, 56);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(55, 50);
+            pictureBox5.TabIndex = 11;
+            pictureBox5.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(782, 564);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox4);
             Controls.Add(label4);
             Controls.Add(btnDecreaseBet);
             Controls.Add(btnAddBet);
@@ -191,6 +217,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,5 +236,7 @@
         private Button btnDecreaseBet;
         private System.Windows.Forms.Timer spinTimer;
         private Label label4;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
     }
 }
