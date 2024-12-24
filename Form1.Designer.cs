@@ -41,6 +41,10 @@
             spinTimer = new System.Windows.Forms.Timer(components);
             labelJackpot = new Label();
             panel1 = new Panel();
+            pictureBox22 = new PictureBox();
+            pictureBox20 = new PictureBox();
+            pictureBox19 = new PictureBox();
+            pictureBox18 = new PictureBox();
             lblActiveLines = new Label();
             btnDecreaseLines = new Button();
             btnIncreaseLines = new Button();
@@ -70,12 +74,18 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
-            pictureBox18 = new PictureBox();
-            pictureBox19 = new PictureBox();
+            pictureBox21 = new PictureBox();
+            pictureBox23 = new PictureBox();
+            pictureBox24 = new PictureBox();
+            pictureBox25 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             panel2.SuspendLayout();
@@ -91,8 +101,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -238,6 +250,12 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox25);
+            panel1.Controls.Add(pictureBox24);
+            panel1.Controls.Add(pictureBox23);
+            panel1.Controls.Add(pictureBox21);
+            panel1.Controls.Add(pictureBox22);
+            panel1.Controls.Add(pictureBox20);
             panel1.Controls.Add(pictureBox19);
             panel1.Controls.Add(pictureBox18);
             panel1.Controls.Add(lblActiveLines);
@@ -271,6 +289,48 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
             panel1.TabIndex = 12;
+            // 
+            // pictureBox22
+            // 
+            pictureBox22.BackgroundImage = Properties.Resources.shinydiamond;
+            pictureBox22.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox22.Location = new Point(27, 97);
+            pictureBox22.Name = "pictureBox22";
+            pictureBox22.Size = new Size(73, 62);
+            pictureBox22.TabIndex = 33;
+            pictureBox22.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            pictureBox20.BackgroundImage = Properties.Resources.shinydiamond;
+            pictureBox20.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox20.Location = new Point(950, 373);
+            pictureBox20.Name = "pictureBox20";
+            pictureBox20.Size = new Size(73, 62);
+            pictureBox20.TabIndex = 31;
+            pictureBox20.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.Anchor = AnchorStyles.None;
+            pictureBox19.BackgroundImage = Properties.Resources.coin;
+            pictureBox19.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox19.Location = new Point(683, 18);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(88, 82);
+            pictureBox19.TabIndex = 30;
+            pictureBox19.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Anchor = AnchorStyles.None;
+            pictureBox18.BackgroundImage = Properties.Resources.coin;
+            pictureBox18.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox18.Location = new Point(271, 17);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(88, 82);
+            pictureBox18.TabIndex = 29;
+            pictureBox18.TabStop = false;
             // 
             // lblActiveLines
             // 
@@ -641,27 +701,45 @@
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
             // 
-            // pictureBox18
+            // pictureBox21
             // 
-            pictureBox18.Anchor = AnchorStyles.None;
-            pictureBox18.BackgroundImage = Properties.Resources.coin;
-            pictureBox18.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox18.Location = new Point(271, 17);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(88, 82);
-            pictureBox18.TabIndex = 29;
-            pictureBox18.TabStop = false;
+            pictureBox21.BackgroundImage = Properties.Resources.gems3;
+            pictureBox21.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox21.Location = new Point(27, 373);
+            pictureBox21.Name = "pictureBox21";
+            pictureBox21.Size = new Size(73, 62);
+            pictureBox21.TabIndex = 34;
+            pictureBox21.TabStop = false;
             // 
-            // pictureBox19
+            // pictureBox23
             // 
-            pictureBox19.Anchor = AnchorStyles.None;
-            pictureBox19.BackgroundImage = Properties.Resources.coin;
-            pictureBox19.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox19.Location = new Point(683, 18);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(88, 82);
-            pictureBox19.TabIndex = 30;
-            pictureBox19.TabStop = false;
+            pictureBox23.BackgroundImage = Properties.Resources.gems3;
+            pictureBox23.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox23.Location = new Point(770, 561);
+            pictureBox23.Name = "pictureBox23";
+            pictureBox23.Size = new Size(73, 62);
+            pictureBox23.TabIndex = 35;
+            pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            pictureBox24.BackgroundImage = Properties.Resources.gems4;
+            pictureBox24.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox24.Location = new Point(950, 97);
+            pictureBox24.Name = "pictureBox24";
+            pictureBox24.Size = new Size(73, 62);
+            pictureBox24.TabIndex = 36;
+            pictureBox24.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            pictureBox25.BackgroundImage = Properties.Resources.gems4;
+            pictureBox25.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox25.Location = new Point(40, 609);
+            pictureBox25.Name = "pictureBox25";
+            pictureBox25.Size = new Size(73, 62);
+            pictureBox25.TabIndex = 37;
+            pictureBox25.TabStop = false;
             // 
             // Form1
             // 
@@ -680,6 +758,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             panel2.ResumeLayout(false);
@@ -695,8 +777,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
             ResumeLayout(false);
         }
 
@@ -745,5 +829,11 @@
         private Button btnIncreaseLines;
         private PictureBox pictureBox19;
         private PictureBox pictureBox18;
+        private PictureBox pictureBox22;
+        private PictureBox pictureBox20;
+        private PictureBox pictureBox23;
+        private PictureBox pictureBox21;
+        private PictureBox pictureBox25;
+        private PictureBox pictureBox24;
     }
 }
