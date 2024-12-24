@@ -47,7 +47,7 @@ namespace Slot777
 
         private void LoadImages()
         {
-            int numberOfImages = 9;
+            int numberOfImages = 10;
             for (int i = 1; i <= numberOfImages; i++)
             {
                 string fileName = $"{i}.png";

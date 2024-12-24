@@ -65,6 +65,8 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
+            pictureBox16 = new PictureBox();
+            pictureBox17 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -82,6 +84,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -126,7 +130,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label1.ForeColor = Color.SandyBrown;
+            label1.ForeColor = Color.DarkSlateGray;
             label1.Location = new Point(651, 597);
             label1.Name = "label1";
             label1.Size = new Size(106, 20);
@@ -139,7 +143,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label2.ForeColor = Color.SandyBrown;
+            label2.ForeColor = Color.DarkSlateGray;
             label2.Location = new Point(217, 593);
             label2.Name = "label2";
             label2.Size = new Size(57, 20);
@@ -152,7 +156,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label3.ForeColor = Color.SandyBrown;
+            label3.ForeColor = Color.DarkSlateGray;
             label3.Location = new Point(467, 79);
             label3.Name = "label3";
             label3.Size = new Size(59, 20);
@@ -227,6 +231,8 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox17);
+            panel1.Controls.Add(pictureBox16);
             panel1.Controls.Add(lblLine10);
             panel1.Controls.Add(lblLine9);
             panel1.Controls.Add(lblLine8);
@@ -534,12 +540,34 @@
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
             // 
+            // pictureBox16
+            // 
+            pictureBox16.Anchor = AnchorStyles.None;
+            pictureBox16.BackgroundImage = Properties.Resources.treasurebag;
+            pictureBox16.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox16.Location = new Point(144, 12);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(88, 82);
+            pictureBox16.TabIndex = 24;
+            pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.Anchor = AnchorStyles.None;
+            pictureBox17.BackgroundImage = Properties.Resources.treasurebag;
+            pictureBox17.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox17.Location = new Point(808, 12);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(88, 82);
+            pictureBox17.TabIndex = 25;
+            pictureBox17.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
-            BackgroundImage = Properties.Resources.bg1;
+            BackgroundImage = Properties.Resources.bg3;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1052, 673);
             Controls.Add(panel1);
@@ -564,6 +592,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ResumeLayout(false);
         }
 
@@ -605,5 +635,7 @@
         private Label lblLine8;
         private Label lblLine7;
         private Label lblLine6;
+        private PictureBox pictureBox16;
+        private PictureBox pictureBox17;
     }
 }
