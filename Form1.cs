@@ -239,9 +239,14 @@ namespace Slot777
             player.controls.play();
         }
 
+        // connect button to paytable form
         private void btnPaytable_Click(object sender, EventArgs e)
         {
-            
+            // Create an instance of the PaytableForm
+            PaytableForm paytableForm = new PaytableForm();
+
+            // Show the PaytableForm as a dialog
+            paytableForm.ShowDialog();
         }
     }
 }
