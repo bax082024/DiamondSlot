@@ -42,6 +42,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources._1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Location = new Point(22, 31);
@@ -52,6 +53,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources._2;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.Location = new Point(22, 83);
@@ -62,6 +64,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = Properties.Resources._3;
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox3.Location = new Point(22, 136);
@@ -72,6 +75,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = Properties.Resources._4;
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox4.Location = new Point(22, 190);
@@ -82,6 +86,7 @@
             // 
             // pictureBox5
             // 
+            pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._51;
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox5.Location = new Point(22, 248);
