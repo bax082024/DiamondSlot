@@ -123,11 +123,12 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(96, 229);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(100, 15);
             label3.TabIndex = 7;
-            label3.Text = "label3";
+            label3.Text = "3x 7 = 50 credits";
             // 
             // label4
             // 
