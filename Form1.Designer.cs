@@ -57,7 +57,7 @@
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackColor = Color.LemonChiffon;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(38, 140);
+            pictureBox1.Location = new Point(44, 140);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(150, 142);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -69,7 +69,7 @@
             pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.BackColor = Color.LemonChiffon;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Location = new Point(201, 140);
+            pictureBox2.Location = new Point(207, 140);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(150, 142);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -81,7 +81,7 @@
             pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BackColor = Color.LemonChiffon;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(364, 140);
+            pictureBox3.Location = new Point(370, 140);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(150, 142);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -95,7 +95,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label1.ForeColor = Color.SandyBrown;
-            label1.Location = new Point(99, 305);
+            label1.Location = new Point(97, 305);
             label1.Name = "label1";
             label1.Size = new Size(106, 20);
             label1.TabIndex = 3;
@@ -108,7 +108,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label2.ForeColor = Color.SandyBrown;
-            label2.Location = new Point(69, 381);
+            label2.Location = new Point(67, 381);
             label2.Name = "label2";
             label2.Size = new Size(57, 20);
             label2.TabIndex = 4;
@@ -121,7 +121,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label3.ForeColor = Color.SandyBrown;
-            label3.Location = new Point(411, 305);
+            label3.Location = new Point(409, 305);
             label3.Name = "label3";
             label3.Size = new Size(59, 20);
             label3.TabIndex = 5;
@@ -133,7 +133,7 @@
             button1.BackColor = Color.LawnGreen;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(220, 365);
+            button1.Location = new Point(218, 365);
             button1.Name = "button1";
             button1.Size = new Size(131, 43);
             button1.TabIndex = 6;
@@ -150,7 +150,7 @@
             btnAddBet.FlatStyle = FlatStyle.Flat;
             btnAddBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAddBet.ImageAlign = ContentAlignment.TopLeft;
-            btnAddBet.Location = new Point(105, 404);
+            btnAddBet.Location = new Point(103, 404);
             btnAddBet.Name = "btnAddBet";
             btnAddBet.Size = new Size(15, 15);
             btnAddBet.TabIndex = 7;
@@ -166,7 +166,7 @@
             btnDecreaseBet.FlatStyle = FlatStyle.Flat;
             btnDecreaseBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnDecreaseBet.ImageAlign = ContentAlignment.TopLeft;
-            btnDecreaseBet.Location = new Point(69, 404);
+            btnDecreaseBet.Location = new Point(67, 404);
             btnDecreaseBet.Name = "btnDecreaseBet";
             btnDecreaseBet.Size = new Size(15, 15);
             btnDecreaseBet.TabIndex = 8;
@@ -185,7 +185,7 @@
             label4.BackColor = Color.Black;
             label4.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Gold;
-            label4.Location = new Point(160, 40);
+            label4.Location = new Point(158, 40);
             label4.Name = "label4";
             label4.Size = new Size(251, 39);
             label4.TabIndex = 9;
@@ -197,7 +197,7 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = Properties.Resources._5;
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(85, 29);
+            pictureBox4.Location = new Point(83, 29);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(55, 50);
             pictureBox4.TabIndex = 10;
@@ -209,7 +209,7 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._5;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(436, 29);
+            pictureBox5.Location = new Point(434, 29);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(55, 50);
             pictureBox5.TabIndex = 11;
@@ -236,7 +236,7 @@
             panel1.Controls.Add(label3);
             panel1.Location = new Point(132, 59);
             panel1.Name = "panel1";
-            panel1.Size = new Size(579, 445);
+            panel1.Size = new Size(575, 445);
             panel1.TabIndex = 12;
             // 
             // btnPaytable
@@ -261,7 +261,7 @@
             ClientSize = new Size(857, 564);
             Controls.Add(panel1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Jackpot 500";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
