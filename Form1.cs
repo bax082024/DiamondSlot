@@ -86,46 +86,68 @@ namespace Slot777
             // Define the lines
             int[][] lines = new int[][]
             {
-        new int[] { 0, 1, 2, 3, 4 }, // Top row
-        new int[] { 5, 6, 7, 8, 9 }, // Middle row
-        new int[] { 10, 11, 12, 13, 14 }, // Bottom row
-        new int[] { 0, 6, 12, 8, 4 }, // Diagonal top-left to bottom-right
-        new int[] { 10, 6, 2, 8, 14 } // Diagonal bottom-left to top-right
+                new int[] { 0, 1, 2, 3, 4 }, // Top row
+                new int[] { 5, 6, 7, 8, 9 }, // Middle row
+                new int[] { 10, 11, 12, 13, 14 }, // Bottom row
+                new int[] { 0, 6, 12, 8, 4 }, // Diagonal top-left to bottom-right
+                new int[] { 10, 6, 2, 8, 14 } // Diagonal bottom-left to top-right
             };
 
             foreach (var (line, isActive) in lines.Zip(activeLines, (line, isActive) => (line, isActive)))
             {
                 if (!isActive) continue; // Skip inactive lines
 
-                // Check if the first three reels match
                 int firstSymbol = GetSymbolIndex(line[0]);
-                if (firstSymbol != -1 && GetSymbolIndex(line[1]) == firstSymbol && GetSymbolIndex(line[2]) == firstSymbol)
+                bool isWinLine = true;
+
+                foreach (int index in line)
                 {
-                    // Calculate winnings based on the first three reels matching
-                    switch (firstSymbol)
+                    if (GetSymbolIndex(index) != firstSymbol)
                     {
-                        case 1: // Example: Grapes
-                            total += 20 * bet;
-                            break;
-                        case 2: // Example: Bells
-                            total += 30 * bet;
-                            break;
-                        case 3: // Example: Cherries
-                            total += 15 * bet;
-                            break;
-                        case 4: // Example: Diamonds
-                            total += 50 * bet;
-                            break;
-                        case 5: // Jackpot symbols
-                            total += 100 * bet;
-                            MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            break;
+                        isWinLine = false;
+                        break;
                     }
+                }
+
+                if (isWinLine)
+                {
+                    // Standard payouts
+                    if (firstSymbol == 1) total += 20 * bet; // Icon 1
+                    else if (firstSymbol == 3) total += 15 * bet; // Icon 3
+                    else if (firstSymbol == 4) total += 50 * bet; // Icon 4
+                    else if (firstSymbol == 5) // Jackpot
+                    {
+                        total += 100 * bet;
+                        MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+
+            // Special payouts for 2.png (icon 2)
+            if (GetSymbolIndex(0) == 2) // Reel 1 contains the special symbol
+            {
+                int specialCount = 1; // Start with Reel 1
+                if (GetSymbolIndex(1) == 2) specialCount++; // Check Reel 2
+                if (GetSymbolIndex(2) == 2) specialCount++; // Check Reel 3
+
+                // Calculate payout based on special symbol count
+                if (specialCount == 1)
+                {
+                    total += bet; // Bet returned
+                }
+                else if (specialCount == 2)
+                {
+                    total += bet + (2 * bet); // Bet + 2 times bet
+                }
+                else if (specialCount == 3)
+                {
+                    total += bet + (4 * bet); // Bet + 4 times bet
                 }
             }
 
             credits += total; // Update credits
         }
+
 
 
         private int GetSymbolIndex(int reelIndex)
