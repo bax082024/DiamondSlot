@@ -30,3 +30,9 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 ## Statistics
 
 - Displays current credits, active paylines, bets, and last spin winnings directly in the UI.
+
+
+## How to Play
+
+1. **Adjust the bet:**
+	-  Use the `"+"` and `"-"` buttons to set your desired bet amount (1 to 3 credits per payline).
