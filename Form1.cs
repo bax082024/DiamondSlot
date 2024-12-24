@@ -294,6 +294,10 @@ namespace Slot777
                 UpdateLineLabels();
                 UpdateUI();
             }
+            else
+            {
+                MessageBox.Show("All lines are allready active!", "Max Lines.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 
