@@ -35,4 +35,4 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 ## How to Play
 
 1. **Adjust the bet:**
-	-  Use the `"+"` and `"-"` buttons to set your desired bet amount (1 to 3 credits per payline).
+	-  Use the `+` and `-` buttons to set your desired bet amount (1 to 3 credits per payline).
