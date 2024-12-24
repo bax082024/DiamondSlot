@@ -13,6 +13,8 @@ namespace Slot777
         // Declare total, bet, and credits
         private long credits = 100;
         private long total = 0;
+        private const int MaxBet = 10;
+        private const int MinBet = 1;
         private int bet = 1;
         private int spinCount = 0;
 
