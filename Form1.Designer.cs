@@ -35,6 +35,8 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -86,8 +88,9 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.LemonChiffon;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(186, 20);
+            label2.Location = new Point(70, 189);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
             label2.TabIndex = 4;
@@ -116,12 +119,43 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.Silver;
+            button2.BackgroundImage = Properties.Resources.plus;
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button2.ImageAlign = ContentAlignment.TopLeft;
+            button2.Location = new Point(95, 207);
+            button2.Name = "button2";
+            button2.Size = new Size(15, 15);
+            button2.TabIndex = 7;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Silver;
+            button3.BackgroundImage = Properties.Resources.minus;
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button3.ImageAlign = ContentAlignment.TopLeft;
+            button3.Location = new Point(70, 207);
+            button3.Name = "button3";
+            button3.Size = new Size(15, 15);
+            button3.TabIndex = 8;
+            button3.Text = "-";
+            button3.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(509, 343);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -148,5 +182,7 @@
         private Label label2;
         private Label label3;
         private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
