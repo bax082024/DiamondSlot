@@ -41,6 +41,16 @@
             spinTimer = new System.Windows.Forms.Timer(components);
             labelJackpot = new Label();
             panel1 = new Panel();
+            lblLine10 = new Label();
+            lblLine9 = new Label();
+            lblLine8 = new Label();
+            lblLine7 = new Label();
+            lblLine6 = new Label();
+            lblLine5 = new Label();
+            lblLine4 = new Label();
+            lblLine3 = new Label();
+            lblLine2 = new Label();
+            lblLine1 = new Label();
             panel2 = new Panel();
             pictureBox11 = new PictureBox();
             pictureBox13 = new PictureBox();
@@ -55,16 +65,6 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
-            lblLine1 = new Label();
-            lblLine2 = new Label();
-            lblLine3 = new Label();
-            lblLine4 = new Label();
-            lblLine5 = new Label();
-            lblLine10 = new Label();
-            lblLine9 = new Label();
-            lblLine8 = new Label();
-            lblLine7 = new Label();
-            lblLine6 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -225,7 +225,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
+            panel1.BackColor = Color.Transparent;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(lblLine10);
             panel1.Controls.Add(lblLine9);
@@ -251,6 +251,108 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
             panel1.TabIndex = 12;
+            // 
+            // lblLine10
+            // 
+            lblLine10.AutoSize = true;
+            lblLine10.BackColor = Color.FromArgb(128, 128, 255);
+            lblLine10.Location = new Point(965, 68);
+            lblLine10.Name = "lblLine10";
+            lblLine10.Size = new Size(38, 15);
+            lblLine10.TabIndex = 23;
+            lblLine10.Text = "Line 5";
+            // 
+            // lblLine9
+            // 
+            lblLine9.AutoSize = true;
+            lblLine9.BackColor = Color.FromArgb(255, 128, 0);
+            lblLine9.Location = new Point(965, 593);
+            lblLine9.Name = "lblLine9";
+            lblLine9.Size = new Size(38, 15);
+            lblLine9.TabIndex = 22;
+            lblLine9.Text = "Line 4";
+            // 
+            // lblLine8
+            // 
+            lblLine8.AutoSize = true;
+            lblLine8.BackColor = Color.Red;
+            lblLine8.Location = new Point(965, 471);
+            lblLine8.Name = "lblLine8";
+            lblLine8.Size = new Size(38, 15);
+            lblLine8.TabIndex = 21;
+            lblLine8.Text = "Line 3";
+            // 
+            // lblLine7
+            // 
+            lblLine7.AutoSize = true;
+            lblLine7.BackColor = Color.Lime;
+            lblLine7.Location = new Point(965, 177);
+            lblLine7.Name = "lblLine7";
+            lblLine7.Size = new Size(38, 15);
+            lblLine7.TabIndex = 20;
+            lblLine7.Text = "Line 2";
+            // 
+            // lblLine6
+            // 
+            lblLine6.AutoSize = true;
+            lblLine6.BackColor = Color.Blue;
+            lblLine6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLine6.Location = new Point(965, 322);
+            lblLine6.Name = "lblLine6";
+            lblLine6.Size = new Size(40, 15);
+            lblLine6.TabIndex = 19;
+            lblLine6.Text = "Line 1";
+            // 
+            // lblLine5
+            // 
+            lblLine5.AutoSize = true;
+            lblLine5.BackColor = Color.FromArgb(128, 128, 255);
+            lblLine5.Location = new Point(40, 68);
+            lblLine5.Name = "lblLine5";
+            lblLine5.Size = new Size(38, 15);
+            lblLine5.TabIndex = 18;
+            lblLine5.Text = "Line 5";
+            // 
+            // lblLine4
+            // 
+            lblLine4.AutoSize = true;
+            lblLine4.BackColor = Color.FromArgb(255, 128, 0);
+            lblLine4.Location = new Point(40, 593);
+            lblLine4.Name = "lblLine4";
+            lblLine4.Size = new Size(38, 15);
+            lblLine4.TabIndex = 17;
+            lblLine4.Text = "Line 4";
+            // 
+            // lblLine3
+            // 
+            lblLine3.AutoSize = true;
+            lblLine3.BackColor = Color.Red;
+            lblLine3.Location = new Point(40, 471);
+            lblLine3.Name = "lblLine3";
+            lblLine3.Size = new Size(38, 15);
+            lblLine3.TabIndex = 16;
+            lblLine3.Text = "Line 3";
+            // 
+            // lblLine2
+            // 
+            lblLine2.AutoSize = true;
+            lblLine2.BackColor = Color.Lime;
+            lblLine2.Location = new Point(40, 177);
+            lblLine2.Name = "lblLine2";
+            lblLine2.Size = new Size(38, 15);
+            lblLine2.TabIndex = 15;
+            lblLine2.Text = "Line 2";
+            // 
+            // lblLine1
+            // 
+            lblLine1.AutoSize = true;
+            lblLine1.BackColor = Color.Blue;
+            lblLine1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLine1.Location = new Point(40, 322);
+            lblLine1.Name = "lblLine1";
+            lblLine1.Size = new Size(40, 15);
+            lblLine1.TabIndex = 14;
+            lblLine1.Text = "Line 1";
             // 
             // panel2
             // 
@@ -432,113 +534,12 @@
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
             // 
-            // lblLine1
-            // 
-            lblLine1.AutoSize = true;
-            lblLine1.BackColor = Color.Blue;
-            lblLine1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLine1.Location = new Point(40, 322);
-            lblLine1.Name = "lblLine1";
-            lblLine1.Size = new Size(40, 15);
-            lblLine1.TabIndex = 14;
-            lblLine1.Text = "Line 1";
-            // 
-            // lblLine2
-            // 
-            lblLine2.AutoSize = true;
-            lblLine2.BackColor = Color.Lime;
-            lblLine2.Location = new Point(40, 177);
-            lblLine2.Name = "lblLine2";
-            lblLine2.Size = new Size(38, 15);
-            lblLine2.TabIndex = 15;
-            lblLine2.Text = "Line 2";
-            // 
-            // lblLine3
-            // 
-            lblLine3.AutoSize = true;
-            lblLine3.BackColor = Color.Red;
-            lblLine3.Location = new Point(40, 471);
-            lblLine3.Name = "lblLine3";
-            lblLine3.Size = new Size(38, 15);
-            lblLine3.TabIndex = 16;
-            lblLine3.Text = "Line 3";
-            // 
-            // lblLine4
-            // 
-            lblLine4.AutoSize = true;
-            lblLine4.BackColor = Color.FromArgb(255, 128, 0);
-            lblLine4.Location = new Point(40, 593);
-            lblLine4.Name = "lblLine4";
-            lblLine4.Size = new Size(38, 15);
-            lblLine4.TabIndex = 17;
-            lblLine4.Text = "Line 4";
-            // 
-            // lblLine5
-            // 
-            lblLine5.AutoSize = true;
-            lblLine5.BackColor = Color.FromArgb(128, 128, 255);
-            lblLine5.Location = new Point(40, 68);
-            lblLine5.Name = "lblLine5";
-            lblLine5.Size = new Size(38, 15);
-            lblLine5.TabIndex = 18;
-            lblLine5.Text = "Line 5";
-            // 
-            // lblLine10
-            // 
-            lblLine10.AutoSize = true;
-            lblLine10.BackColor = Color.FromArgb(128, 128, 255);
-            lblLine10.Location = new Point(965, 68);
-            lblLine10.Name = "lblLine10";
-            lblLine10.Size = new Size(38, 15);
-            lblLine10.TabIndex = 23;
-            lblLine10.Text = "Line 5";
-            // 
-            // lblLine9
-            // 
-            lblLine9.AutoSize = true;
-            lblLine9.BackColor = Color.FromArgb(255, 128, 0);
-            lblLine9.Location = new Point(965, 593);
-            lblLine9.Name = "lblLine9";
-            lblLine9.Size = new Size(38, 15);
-            lblLine9.TabIndex = 22;
-            lblLine9.Text = "Line 4";
-            // 
-            // lblLine8
-            // 
-            lblLine8.AutoSize = true;
-            lblLine8.BackColor = Color.Red;
-            lblLine8.Location = new Point(965, 471);
-            lblLine8.Name = "lblLine8";
-            lblLine8.Size = new Size(38, 15);
-            lblLine8.TabIndex = 21;
-            lblLine8.Text = "Line 3";
-            // 
-            // lblLine7
-            // 
-            lblLine7.AutoSize = true;
-            lblLine7.BackColor = Color.Lime;
-            lblLine7.Location = new Point(965, 177);
-            lblLine7.Name = "lblLine7";
-            lblLine7.Size = new Size(38, 15);
-            lblLine7.TabIndex = 20;
-            lblLine7.Text = "Line 2";
-            // 
-            // lblLine6
-            // 
-            lblLine6.AutoSize = true;
-            lblLine6.BackColor = Color.Blue;
-            lblLine6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLine6.Location = new Point(965, 322);
-            lblLine6.Name = "lblLine6";
-            lblLine6.Size = new Size(40, 15);
-            lblLine6.TabIndex = 19;
-            lblLine6.Text = "Line 1";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
+            BackgroundImage = Properties.Resources.bg1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1052, 673);
             Controls.Add(panel1);
