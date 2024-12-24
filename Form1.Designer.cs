@@ -41,6 +41,9 @@
             spinTimer = new System.Windows.Forms.Timer(components);
             labelJackpot = new Label();
             panel1 = new Panel();
+            lblLines = new Label();
+            btnDecreaseLines = new Button();
+            btnIncreaseLines = new Button();
             pictureBox17 = new PictureBox();
             pictureBox16 = new PictureBox();
             lblLine10 = new Label();
@@ -67,9 +70,6 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
-            btnDecreaseLines = new Button();
-            btnIncreaseLines = new Button();
-            lblLines = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -264,6 +264,52 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
             panel1.TabIndex = 12;
+            // 
+            // lblLines
+            // 
+            lblLines.Anchor = AnchorStyles.None;
+            lblLines.AutoSize = true;
+            lblLines.BackColor = Color.Transparent;
+            lblLines.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblLines.ForeColor = Color.DarkSlateGray;
+            lblLines.Location = new Point(254, 597);
+            lblLines.Name = "lblLines";
+            lblLines.Size = new Size(72, 20);
+            lblLines.TabIndex = 28;
+            lblLines.Text = "Lines: 5";
+            // 
+            // btnDecreaseLines
+            // 
+            btnDecreaseLines.Anchor = AnchorStyles.None;
+            btnDecreaseLines.BackColor = Color.DarkOliveGreen;
+            btnDecreaseLines.BackgroundImage = Properties.Resources.minus;
+            btnDecreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
+            btnDecreaseLines.FlatStyle = FlatStyle.Flat;
+            btnDecreaseLines.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnDecreaseLines.ImageAlign = ContentAlignment.TopLeft;
+            btnDecreaseLines.Location = new Point(254, 621);
+            btnDecreaseLines.Name = "btnDecreaseLines";
+            btnDecreaseLines.Size = new Size(15, 15);
+            btnDecreaseLines.TabIndex = 27;
+            btnDecreaseLines.Text = "-";
+            btnDecreaseLines.UseVisualStyleBackColor = false;
+            btnDecreaseLines.Click += btnDecreaseLines_Click;
+            // 
+            // btnIncreaseLines
+            // 
+            btnIncreaseLines.Anchor = AnchorStyles.None;
+            btnIncreaseLines.BackColor = Color.DarkOliveGreen;
+            btnIncreaseLines.BackgroundImage = Properties.Resources.plus;
+            btnIncreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
+            btnIncreaseLines.FlatStyle = FlatStyle.Flat;
+            btnIncreaseLines.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnIncreaseLines.ImageAlign = ContentAlignment.TopLeft;
+            btnIncreaseLines.Location = new Point(290, 621);
+            btnIncreaseLines.Name = "btnIncreaseLines";
+            btnIncreaseLines.Size = new Size(15, 15);
+            btnIncreaseLines.TabIndex = 26;
+            btnIncreaseLines.UseVisualStyleBackColor = false;
+            btnIncreaseLines.Click += btnIncreaseLines_Click;
             // 
             // pictureBox17
             // 
@@ -577,51 +623,6 @@
             btnPaytable.Text = "Paytable";
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
-            // 
-            // btnDecreaseLines
-            // 
-            btnDecreaseLines.Anchor = AnchorStyles.None;
-            btnDecreaseLines.BackColor = Color.DarkOliveGreen;
-            btnDecreaseLines.BackgroundImage = Properties.Resources.minus;
-            btnDecreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
-            btnDecreaseLines.FlatStyle = FlatStyle.Flat;
-            btnDecreaseLines.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnDecreaseLines.ImageAlign = ContentAlignment.TopLeft;
-            btnDecreaseLines.Location = new Point(254, 621);
-            btnDecreaseLines.Name = "btnDecreaseLines";
-            btnDecreaseLines.Size = new Size(15, 15);
-            btnDecreaseLines.TabIndex = 27;
-            btnDecreaseLines.Text = "-";
-            btnDecreaseLines.UseVisualStyleBackColor = false;
-            // 
-            // btnIncreaseLines
-            // 
-            btnIncreaseLines.Anchor = AnchorStyles.None;
-            btnIncreaseLines.BackColor = Color.DarkOliveGreen;
-            btnIncreaseLines.BackgroundImage = Properties.Resources.plus;
-            btnIncreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
-            btnIncreaseLines.FlatStyle = FlatStyle.Flat;
-            btnIncreaseLines.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnIncreaseLines.ImageAlign = ContentAlignment.TopLeft;
-            btnIncreaseLines.Location = new Point(290, 621);
-            btnIncreaseLines.Name = "btnIncreaseLines";
-            btnIncreaseLines.Size = new Size(15, 15);
-            btnIncreaseLines.TabIndex = 26;
-            btnIncreaseLines.UseVisualStyleBackColor = false;
-            btnIncreaseLines.Click += btnIncreaseLines_Click;
-            // 
-            // lblLines
-            // 
-            lblLines.Anchor = AnchorStyles.None;
-            lblLines.AutoSize = true;
-            lblLines.BackColor = Color.Transparent;
-            lblLines.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            lblLines.ForeColor = Color.DarkSlateGray;
-            lblLines.Location = new Point(254, 597);
-            lblLines.Name = "lblLines";
-            lblLines.Size = new Size(72, 20);
-            lblLines.TabIndex = 28;
-            lblLines.Text = "Lines: 5";
             // 
             // Form1
             // 

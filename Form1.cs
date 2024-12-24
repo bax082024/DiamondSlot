@@ -299,6 +299,17 @@ namespace Slot777
                 MessageBox.Show("All lines are allready active!", "Max Lines.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnDecreaseLines_Click(object sender, EventArgs e)
+        {
+            if (activeLinesCount > 1)
+            {
+                activeLines[activeLineCount - 1] = false; // Deactivate the last active line
+                activeLineCount--;
+                UpdateLineLabels();
+                UpdateUI();
+            }
+        }
     }
 
 
