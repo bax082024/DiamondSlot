@@ -141,14 +141,14 @@ namespace Slot777
 
         private void btnDecreaseBet_Click(object sender, EventArgs e)
         {
-            if (bet > 1)
+            if (bet > MinBet)
             {
                 bet -= 1;
                 UpdateUI();
             }
             else
             {
-                MessageBox.Show("Bet limit reached.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"The minimum bet is {MinBet}!", "Min Bet Reached", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
