@@ -129,7 +129,11 @@ namespace Slot777
 
         private void btnDecreaseBet_Click(object sender, EventArgs e)
         {
-
+            if (bet > 1)
+            {
+                bet -= 1;
+                UpdateUI();
+            }
         }
     }
 }
