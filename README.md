@@ -26,3 +26,7 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 ## Sound Effects
 
 - Includes dynamic sound effects for spins adding to the excitement.
+
+## Statistics
+
+- Displays current credits, active paylines, bets, and last spin winnings directly in the UI.
