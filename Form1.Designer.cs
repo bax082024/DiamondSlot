@@ -92,9 +92,9 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.BackColor = Color.DarkSlateGray;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label1.ForeColor = Color.Tomato;
+            label1.ForeColor = Color.SandyBrown;
             label1.Location = new Point(99, 305);
             label1.Name = "label1";
             label1.Size = new Size(106, 20);
@@ -105,9 +105,9 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.BackColor = Color.DarkSlateGray;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label2.ForeColor = Color.Tomato;
+            label2.ForeColor = Color.SandyBrown;
             label2.Location = new Point(69, 381);
             label2.Name = "label2";
             label2.Size = new Size(57, 20);
@@ -118,9 +118,9 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.BackColor = Color.DarkSlateGray;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label3.ForeColor = Color.Tomato;
+            label3.ForeColor = Color.SandyBrown;
             label3.Location = new Point(411, 305);
             label3.Name = "label3";
             label3.Size = new Size(59, 20);
@@ -194,6 +194,7 @@
             // pictureBox4
             // 
             pictureBox4.Anchor = AnchorStyles.None;
+            pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = Properties.Resources._5;
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox4.Location = new Point(85, 29);
@@ -205,6 +206,7 @@
             // pictureBox5
             // 
             pictureBox5.Anchor = AnchorStyles.None;
+            pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._5;
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox5.Location = new Point(436, 29);
