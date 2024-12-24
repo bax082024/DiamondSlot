@@ -608,6 +608,7 @@
             btnIncreaseLines.Size = new Size(15, 15);
             btnIncreaseLines.TabIndex = 26;
             btnIncreaseLines.UseVisualStyleBackColor = false;
+            btnIncreaseLines.Click += btnIncreaseLines_Click;
             // 
             // lblLines
             // 

@@ -285,7 +285,16 @@ namespace Slot777
 
         }
 
-
+        private void btnIncreaseLines_Click(object sender, EventArgs e)
+        {
+            if (activeLineCount < activeLines.Length)
+            {
+                activeLineCount++;
+                activeLines[activeLineCount - 1] = true; // Activate the next line
+                UpdateLineLabels();
+                UpdateUI();
+            }
+        }
     }
 
 
