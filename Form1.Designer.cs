@@ -42,6 +42,8 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.LemonChiffon;
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Location = new Point(37, 38);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(133, 126);
@@ -51,6 +53,8 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.LemonChiffon;
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             pictureBox2.Location = new Point(186, 38);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(133, 126);
@@ -60,6 +64,8 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackColor = Color.LemonChiffon;
+            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
             pictureBox3.Location = new Point(336, 38);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(133, 126);
@@ -114,6 +120,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkSlateGray;
             ClientSize = new Size(509, 343);
             Controls.Add(button1);
             Controls.Add(label3);
