@@ -85,7 +85,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Black;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.ForeColor = Color.Chocolate;
             label1.Location = new Point(197, 332);
             label1.Name = "label1";
             label1.Size = new Size(73, 15);
@@ -95,8 +97,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.LemonChiffon;
+            label2.BackColor = Color.Black;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.ForeColor = Color.Chocolate;
             label2.Location = new Point(167, 408);
             label2.Name = "label2";
             label2.Size = new Size(40, 15);
@@ -106,7 +109,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Black;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.ForeColor = Color.Chocolate;
             label3.Location = new Point(509, 332);
             label3.Name = "label3";
             label3.Size = new Size(42, 15);
@@ -164,7 +169,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = Color.Black;
             label4.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Gold;
             label4.Location = new Point(258, 67);
