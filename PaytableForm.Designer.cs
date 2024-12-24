@@ -183,8 +183,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
-            BackgroundImage = Properties.Resources.bg2;
+            BackColor = Color.DarkSlateGray;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(413, 450);
             Controls.Add(label7);
