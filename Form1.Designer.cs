@@ -39,39 +39,39 @@
             btnAddBet = new Button();
             btnDecreaseBet = new Button();
             spinTimer = new System.Windows.Forms.Timer(components);
-            label4 = new Label();
+            labelJackpot = new Label();
             panel1 = new Panel();
-            btnPaytable = new Button();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox15 = new PictureBox();
             panel2 = new Panel();
+            pictureBox11 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox15 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            btnPaytable = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -161,7 +161,6 @@
             button1.TabIndex = 6;
             button1.Text = "Spin";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // btnAddBet
             // 
@@ -177,7 +176,6 @@
             btnAddBet.Size = new Size(15, 15);
             btnAddBet.TabIndex = 7;
             btnAddBet.UseVisualStyleBackColor = false;
-            btnAddBet.Click += btnAddBet_Click;
             // 
             // btnDecreaseBet
             // 
@@ -200,18 +198,18 @@
             // 
             spinTimer.Tick += spinTimer_Tick;
             // 
-            // label4
+            // labelJackpot
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.BackColor = Color.Black;
-            label4.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Gold;
-            label4.Location = new Point(391, 58);
-            label4.Name = "label4";
-            label4.Size = new Size(251, 39);
-            label4.TabIndex = 9;
-            label4.Text = "Jackpot 500";
+            labelJackpot.Anchor = AnchorStyles.None;
+            labelJackpot.AutoSize = true;
+            labelJackpot.BackColor = Color.Black;
+            labelJackpot.Font = new Font("Algerian", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelJackpot.ForeColor = Color.Gold;
+            labelJackpot.Location = new Point(391, 58);
+            labelJackpot.Name = "labelJackpot";
+            labelJackpot.Size = new Size(251, 39);
+            labelJackpot.TabIndex = 9;
+            labelJackpot.Text = "Jackpot 500";
             // 
             // panel1
             // 
@@ -219,7 +217,7 @@
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(btnPaytable);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(labelJackpot);
             panel1.Controls.Add(btnDecreaseBet);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(btnAddBet);
@@ -231,163 +229,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
             panel1.TabIndex = 12;
-            // 
-            // btnPaytable
-            // 
-            btnPaytable.Anchor = AnchorStyles.None;
-            btnPaytable.BackColor = Color.SeaGreen;
-            btnPaytable.FlatStyle = FlatStyle.Flat;
-            btnPaytable.Location = new Point(812, 593);
-            btnPaytable.Name = "btnPaytable";
-            btnPaytable.Size = new Size(75, 22);
-            btnPaytable.TabIndex = 12;
-            btnPaytable.Text = "Paytable";
-            btnPaytable.UseVisualStyleBackColor = false;
-            btnPaytable.Click += btnPaytable_Click;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Anchor = AnchorStyles.None;
-            pictureBox4.BackColor = Color.LemonChiffon;
-            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox4.Location = new Point(491, 3);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(150, 142);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 13;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Anchor = AnchorStyles.None;
-            pictureBox5.BackColor = Color.LemonChiffon;
-            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox5.Location = new Point(654, 3);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(150, 142);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 14;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Anchor = AnchorStyles.None;
-            pictureBox6.BackColor = Color.LemonChiffon;
-            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox6.Location = new Point(654, 151);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(150, 142);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 19;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Anchor = AnchorStyles.None;
-            pictureBox7.BackColor = Color.LemonChiffon;
-            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox7.Location = new Point(491, 151);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(150, 142);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 18;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Anchor = AnchorStyles.None;
-            pictureBox8.BackColor = Color.LemonChiffon;
-            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox8.Location = new Point(3, 151);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(150, 142);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 15;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Anchor = AnchorStyles.None;
-            pictureBox9.BackColor = Color.LemonChiffon;
-            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox9.Location = new Point(166, 151);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(150, 142);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 16;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Anchor = AnchorStyles.None;
-            pictureBox10.BackColor = Color.LemonChiffon;
-            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox10.Location = new Point(329, 151);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(150, 142);
-            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox10.TabIndex = 17;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Anchor = AnchorStyles.None;
-            pictureBox11.BackColor = Color.LemonChiffon;
-            pictureBox11.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox11.Location = new Point(654, 299);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(150, 142);
-            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox11.TabIndex = 24;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Anchor = AnchorStyles.None;
-            pictureBox12.BackColor = Color.LemonChiffon;
-            pictureBox12.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox12.Location = new Point(491, 299);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(150, 142);
-            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox12.TabIndex = 23;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.Anchor = AnchorStyles.None;
-            pictureBox13.BackColor = Color.LemonChiffon;
-            pictureBox13.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox13.Location = new Point(3, 299);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(150, 142);
-            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 20;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.Anchor = AnchorStyles.None;
-            pictureBox14.BackColor = Color.LemonChiffon;
-            pictureBox14.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox14.Location = new Point(166, 299);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(150, 142);
-            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox14.TabIndex = 21;
-            pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.Anchor = AnchorStyles.None;
-            pictureBox15.BackColor = Color.LemonChiffon;
-            pictureBox15.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox15.Location = new Point(329, 299);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(150, 142);
-            pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox15.TabIndex = 22;
-            pictureBox15.TabStop = false;
             // 
             // panel2
             // 
@@ -412,6 +253,163 @@
             panel2.Size = new Size(808, 444);
             panel2.TabIndex = 13;
             // 
+            // pictureBox11
+            // 
+            pictureBox11.Anchor = AnchorStyles.None;
+            pictureBox11.BackColor = Color.LemonChiffon;
+            pictureBox11.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox11.Location = new Point(654, 299);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(150, 142);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 24;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Anchor = AnchorStyles.None;
+            pictureBox13.BackColor = Color.LemonChiffon;
+            pictureBox13.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox13.Location = new Point(3, 299);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(150, 142);
+            pictureBox13.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox13.TabIndex = 20;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Anchor = AnchorStyles.None;
+            pictureBox7.BackColor = Color.LemonChiffon;
+            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox7.Location = new Point(491, 151);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(150, 142);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 18;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Anchor = AnchorStyles.None;
+            pictureBox10.BackColor = Color.LemonChiffon;
+            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox10.Location = new Point(329, 151);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(150, 142);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 17;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Anchor = AnchorStyles.None;
+            pictureBox12.BackColor = Color.LemonChiffon;
+            pictureBox12.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox12.Location = new Point(491, 299);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(150, 142);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox12.TabIndex = 23;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Anchor = AnchorStyles.None;
+            pictureBox9.BackColor = Color.LemonChiffon;
+            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox9.Location = new Point(166, 151);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(150, 142);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 16;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Anchor = AnchorStyles.None;
+            pictureBox6.BackColor = Color.LemonChiffon;
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Location = new Point(654, 151);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(150, 142);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 19;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Anchor = AnchorStyles.None;
+            pictureBox8.BackColor = Color.LemonChiffon;
+            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox8.Location = new Point(3, 151);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(150, 142);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 15;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Anchor = AnchorStyles.None;
+            pictureBox5.BackColor = Color.LemonChiffon;
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox5.Location = new Point(654, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(150, 142);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 14;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.Anchor = AnchorStyles.None;
+            pictureBox15.BackColor = Color.LemonChiffon;
+            pictureBox15.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox15.Location = new Point(329, 299);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(150, 142);
+            pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox15.TabIndex = 22;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.None;
+            pictureBox4.BackColor = Color.LemonChiffon;
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox4.Location = new Point(491, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(150, 142);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 13;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Anchor = AnchorStyles.None;
+            pictureBox14.BackColor = Color.LemonChiffon;
+            pictureBox14.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox14.Location = new Point(166, 299);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(150, 142);
+            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox14.TabIndex = 21;
+            pictureBox14.TabStop = false;
+            // 
+            // btnPaytable
+            // 
+            btnPaytable.Anchor = AnchorStyles.None;
+            btnPaytable.BackColor = Color.SeaGreen;
+            btnPaytable.FlatStyle = FlatStyle.Flat;
+            btnPaytable.Location = new Point(812, 593);
+            btnPaytable.Name = "btnPaytable";
+            btnPaytable.Size = new Size(75, 22);
+            btnPaytable.TabIndex = 12;
+            btnPaytable.Text = "Paytable";
+            btnPaytable.UseVisualStyleBackColor = false;
+            btnPaytable.Click += btnPaytable_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -428,19 +426,19 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -456,7 +454,7 @@
         private Button btnAddBet;
         private Button btnDecreaseBet;
         private System.Windows.Forms.Timer spinTimer;
-        private Label label4;
+        private Label labelJackpot;
         private Panel panel1;
         private Button btnPaytable;
         private PictureBox pictureBox11;

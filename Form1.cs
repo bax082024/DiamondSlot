@@ -6,11 +6,9 @@ namespace Slot777
     {
         private static readonly Random random = new();
         private readonly Dictionary<int, Image> imageCache = new();
+        private List<PictureBox> reels = new List<PictureBox>(); // Add this declaration
 
-        // Declare each item
         private int p1, p2, p3;
-
-        // Declare total, bet, and credits
         private long credits = 100;
         private long total = 0;
         private const int MaxBet = 10;
@@ -26,14 +24,11 @@ namespace Slot777
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Initialize Timer
-            spinTimer.Interval = 100; // Adjust spin interval as desired (milliseconds)
-            spinTimer.Tick += spinTimer_Tick; // Attach the Tick event
+            spinTimer.Interval = 100;
+            spinTimer.Tick += spinTimer_Tick;
 
-            // Preload images into a cache for better performance
             LoadImages();
 
-            // Add all PictureBoxes to the reels list
             reels.AddRange(new PictureBox[]
             {
                 pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5,
@@ -41,19 +36,18 @@ namespace Slot777
                 pictureBox11, pictureBox12, pictureBox13, pictureBox14, pictureBox15
             });
 
-            // Initialize UI with default images
             for (int i = 0; i < reels.Count; i++)
             {
-                reels[i].Image = imageCache[(i % imageCache.Count) + 1]; // Assign default images
+                reels[i].Image = imageCache[(i % imageCache.Count) + 1];
             }
 
-            UpdateUI(); // Update UI with initial values
+            UpdateUI();
         }
 
 
         private void LoadImages()
         {
-            int numberOfImages = 10; // Update this to the total number of images
+            int numberOfImages = 9;
             for (int i = 1; i <= numberOfImages; i++)
             {
                 string fileName = $"{i}.png";
@@ -72,11 +66,10 @@ namespace Slot777
         {
             int maxImageIndex = imageCache.Count;
 
-            // Iterate through all reels and assign random images
             for (int i = 0; i < reels.Count; i++)
             {
-                int randomImage = random.Next(1, maxImageIndex + 1); // Random image index
-                reels[i].Image = imageCache[randomImage]; // Assign image to reel
+                int randomImage = random.Next(1, maxImageIndex + 1);
+                reels[i].Image = imageCache[randomImage];
             }
         }
 
@@ -84,42 +77,59 @@ namespace Slot777
         {
             total = 0;
 
-            // Check for cherries
-            if (p1 == 3 && p2 != 3 && p3 != 3) // 1 cherry on Reel 1
+            int[][] lines = new int[][]
             {
-                total += bet; // Bet returned
-            }
-            else if (p1 == 3 && p2 == 3 && p3 != 3) // 2 cherries on Reel 1 and Reel 2
+                new int[] { 0, 1, 2, 3, 4 },
+                new int[] { 5, 6, 7, 8, 9 },
+                new int[] { 10, 11, 12, 13, 14 },
+                new int[] { 0, 6, 12, 8, 4 },
+                new int[] { 10, 6, 2, 8, 14 }
+            };
+
+            foreach (var line in lines)
             {
-                total += bet + (2 * bet); // Bet returned + 2 times bet
-            }
-            else if (p1 == 3 && p2 == 3 && p3 == 3) // 3 cherries on all reels
-            {
-                total += 15 * bet; // 15 times the bet
+                int firstSymbol = GetSymbolIndex(line[0]);
+                bool isWinLine = true;
+
+                foreach (int index in line)
+                {
+                    if (GetSymbolIndex(index) != firstSymbol)
+                    {
+                        isWinLine = false;
+                        break;
+                    }
+                }
+
+                if (isWinLine)
+                {
+                    if (firstSymbol == 1) total += 20 * bet;
+                    else if (firstSymbol == 2) total += 30 * bet;
+                    else if (firstSymbol == 3) total += 15 * bet;
+                    else if (firstSymbol == 4) total += 50 * bet;
+                    else if (firstSymbol == 5)
+                    {
+                        total += 100 * bet;
+                        MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
             }
 
-            // Regular paytable: All symbols must match on all 3 reels
-            else if (p1 == 1 && p2 == 1 && p3 == 1) // Example: Grapes (symbol 1)
-            {
-                total += 20 * bet; // 20 times the bet
-            }
-            else if (p1 == 2 && p2 == 2 && p3 == 2) // Example: Bells (symbol 2)
-            {
-                total += 30 * bet; // 30 times the bet
-            }
-            else if (p1 == 4 && p2 == 4 && p3 == 4) // Example: Diamonds (symbol 4)
-            {
-                total += 50 * bet; // 50 times the bet
-            }
-            else if (p1 == 5 && p2 == 5 && p3 == 5) // Jackpot symbols (symbol 5)
-            {
-                total += 100 * bet; // Jackpot prize scaled with bet
-                MessageBox.Show($"JACKPOT! You won {total} credits!", "Jackpot!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-            // Update credits
             credits += total;
         }
+
+        private int GetSymbolIndex(int reelIndex)
+        {
+            foreach (var kvp in imageCache)
+            {
+                if (reels[reelIndex].Image == kvp.Value)
+                {
+                    return kvp.Key;
+                }
+            }
+            return -1;
+        }
+
+
 
 
 
@@ -129,6 +139,7 @@ namespace Slot777
             label1.Text = $"Credits: {credits}";
             label2.Text = $"Bet: {bet}";
             label3.Text = $"Win: {total}";
+            labelJackpot.Text = $"Jackpot: {jackpot}"; // Example usage
         }
 
 
@@ -209,33 +220,28 @@ namespace Slot777
             }
         }
 
-        private void spinTimer_Tick(object sender, EventArgs e)
+        private void spinTimer_Tick(object? sender, EventArgs e)
         {
-
-
-            // Spin the reels by assigning random images
-            pictureBox1.Image = imageCache[random.Next(1, imageCache.Count + 1)];
-            pictureBox2.Image = imageCache[random.Next(1, imageCache.Count + 1)];
-            pictureBox3.Image = imageCache[random.Next(1, imageCache.Count + 1)];
+            for (int i = 0; i < reels.Count; i++)
+            {
+                reels[i].Image = imageCache[random.Next(1, imageCache.Count + 1)];
+            }
 
             spinCount++;
 
-            // Stop spinning after a certain number of spins
-            if (spinCount >= 20) // Adjust for the number of spins
+            if (spinCount >= 20)
             {
                 spinTimer.Stop();
                 spinCount = 0;
 
-                // Calculate the final result
-                SpinReels(); // Final spin to set the outcome
+                SpinReels();
                 CalculateWin();
                 UpdateUI();
 
-                // Game Over Check
                 if (credits <= 0)
                 {
                     MessageBox.Show("Game Over! No more credits.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    credits = 100; // Reset credits
+                    credits = 100;
                     UpdateUI();
                 }
             }
