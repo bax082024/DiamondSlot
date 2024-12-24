@@ -73,4 +73,9 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 	- File format: `1.png`, `2.png`, etc
 4. Run Project.
 
+## Contact 
+
+- For quesions or feedback please contact:
+- bax082024@gmail.com
+
 
