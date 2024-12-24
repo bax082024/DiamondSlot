@@ -130,7 +130,7 @@ namespace Slot777
 
             if (bet > credits)
             {
-                MessageBox.Show("Not enough credits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+                MessageBox.Show("Not enough credits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -201,7 +201,7 @@ namespace Slot777
 
         private void spinTimer_Tick(object sender, EventArgs e)
         {
-            
+
 
             // Spin the reels by assigning random images
             pictureBox1.Image = imageCache[random.Next(1, imageCache.Count + 1)];
@@ -236,6 +236,20 @@ namespace Slot777
             WindowsMediaPlayer player = new WindowsMediaPlayer();
             player.URL = "Sound/spin.mp3"; // Provide the path to your MP3 file
             player.controls.play();
+        }
+
+        private void btnPaytable_Click(object sender, EventArgs e)
+        {
+            string paytable = "Paytable:\n" +
+                      "- 1 Cherry on Reel 1: Bet back\n" +
+                      "- 2 Cherries on Reel 1 & 2: Bet + 2 back\n" +
+                      "- 3 Cherries: Win 15\n" +
+                      "- 3 Grapes: Win 20\n" +
+                      "- 3 Bells: Win 30\n" +
+                      "- 3 Diamonds: Win 50\n" +
+                      "- 3 Jackpot Symbols: Win 100";
+
+            MessageBox.Show(paytable, "Paytable", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
