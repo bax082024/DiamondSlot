@@ -133,11 +133,12 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(96, 310);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(121, 15);
             label4.TabIndex = 8;
-            label4.Text = "label4";
+            label4.Text = "3x Plum = 20 credits";
             // 
             // label5
             // 
