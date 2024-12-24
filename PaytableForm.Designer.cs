@@ -94,6 +94,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.bg2;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(413, 450);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
