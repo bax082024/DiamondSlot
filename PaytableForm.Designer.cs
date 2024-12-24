@@ -105,77 +105,84 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ButtonFace;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label1.ForeColor = Color.SandyBrown;
             label1.Location = new Point(132, 54);
             label1.Name = "label1";
-            label1.Size = new Size(90, 15);
+            label1.Size = new Size(111, 16);
             label1.TabIndex = 5;
             label1.Text = "3x -  JACKPOT!";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ButtonFace;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label2.ForeColor = Color.SandyBrown;
             label2.Location = new Point(132, 133);
             label2.Name = "label2";
-            label2.Size = new Size(119, 15);
+            label2.Size = new Size(144, 16);
             label2.TabIndex = 6;
             label2.Text = "3x Bells = 30 credits";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.ButtonFace;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label3.ForeColor = Color.SandyBrown;
             label3.Location = new Point(132, 210);
             label3.Name = "label3";
-            label3.Size = new Size(100, 15);
+            label3.Size = new Size(117, 16);
             label3.TabIndex = 7;
             label3.Text = "3x 7 = 50 credits";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.ButtonFace;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label4.ForeColor = Color.SandyBrown;
             label4.Location = new Point(132, 292);
             label4.Name = "label4";
-            label4.Size = new Size(121, 15);
+            label4.Size = new Size(143, 16);
             label4.TabIndex = 8;
             label4.Text = "3x Plum = 20 credits";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = SystemColors.ButtonFace;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label5.ForeColor = Color.SandyBrown;
             label5.Location = new Point(132, 362);
             label5.Name = "label5";
-            label5.Size = new Size(152, 15);
+            label5.Size = new Size(176, 16);
             label5.TabIndex = 9;
             label5.Text = "1x Cherrie = Bet returned";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = SystemColors.ButtonFace;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label6.ForeColor = Color.SandyBrown;
             label6.Location = new Point(132, 384);
             label6.Name = "label6";
-            label6.Size = new Size(214, 15);
+            label6.Size = new Size(251, 16);
             label6.TabIndex = 10;
             label6.Text = "2x Cherrie = Bet returned + 2 credits";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = SystemColors.ButtonFace;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold);
+            label7.ForeColor = Color.SandyBrown;
             label7.Location = new Point(132, 408);
             label7.Name = "label7";
-            label7.Size = new Size(137, 15);
+            label7.Size = new Size(163, 16);
             label7.TabIndex = 11;
             label7.Text = "3x Cherrie =  15 credits";
             // 
