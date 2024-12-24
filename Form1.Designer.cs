@@ -158,6 +158,7 @@
             label3.Size = new Size(59, 20);
             label3.TabIndex = 5;
             label3.Text = "Win: 0";
+            label3.Visible = false;
             // 
             // button1
             // 

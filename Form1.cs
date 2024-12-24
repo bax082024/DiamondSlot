@@ -263,5 +263,14 @@ namespace Slot777
             // Show the PaytableForm as a dialog
             paytableForm.ShowDialog();
         }
+
+        private void UpdateLineLabels()
+        {
+
+        }
+
+
     }
+
+
 }
