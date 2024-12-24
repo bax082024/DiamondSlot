@@ -12,6 +12,7 @@ namespace Slot777
         private long credits = 100;
         private long total = 0;
         private int bet = 1;
+        private int spinCount = 0;
 
         public Form1()
         {
