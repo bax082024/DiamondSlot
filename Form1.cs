@@ -93,6 +93,12 @@ namespace Slot777
         {
             PlaySound();
 
+            if (bet > credits)
+            {
+                MessageBox.Show("Not enough credits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+                return;
+            }
+
             if (credits >= bet)
             {
                 // Deduct the bet
