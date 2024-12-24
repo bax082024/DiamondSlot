@@ -81,6 +81,17 @@ namespace Slot777
             label3.Text = $"Win: {total}";
         }
 
+        private void GameOverCheck()
+        {
+            if (credits <= 0)
+            {
+                MessageBox.Show("Game Over! No more credits.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                credits = 100; // reset credits
+                UpdateUI();
+            }
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (credits >= bet)
