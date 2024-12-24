@@ -41,6 +41,8 @@
             spinTimer = new System.Windows.Forms.Timer(components);
             labelJackpot = new Label();
             panel1 = new Panel();
+            pictureBox17 = new PictureBox();
+            pictureBox16 = new PictureBox();
             lblLine10 = new Label();
             lblLine9 = new Label();
             lblLine8 = new Label();
@@ -65,12 +67,15 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
-            pictureBox16 = new PictureBox();
-            pictureBox17 = new PictureBox();
+            btnDecreaseLines = new Button();
+            btnIncreaseLines = new Button();
+            lblLines = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
@@ -84,8 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -144,7 +147,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             label2.ForeColor = Color.DarkSlateGray;
-            label2.Location = new Point(217, 593);
+            label2.Location = new Point(144, 597);
             label2.Name = "label2";
             label2.Size = new Size(57, 20);
             label2.TabIndex = 4;
@@ -187,7 +190,7 @@
             btnAddBet.FlatStyle = FlatStyle.Flat;
             btnAddBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAddBet.ImageAlign = ContentAlignment.TopLeft;
-            btnAddBet.Location = new Point(253, 616);
+            btnAddBet.Location = new Point(180, 620);
             btnAddBet.Name = "btnAddBet";
             btnAddBet.Size = new Size(15, 15);
             btnAddBet.TabIndex = 7;
@@ -202,7 +205,7 @@
             btnDecreaseBet.FlatStyle = FlatStyle.Flat;
             btnDecreaseBet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnDecreaseBet.ImageAlign = ContentAlignment.TopLeft;
-            btnDecreaseBet.Location = new Point(217, 616);
+            btnDecreaseBet.Location = new Point(144, 620);
             btnDecreaseBet.Name = "btnDecreaseBet";
             btnDecreaseBet.Size = new Size(15, 15);
             btnDecreaseBet.TabIndex = 8;
@@ -231,6 +234,9 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(lblLines);
+            panel1.Controls.Add(btnDecreaseLines);
+            panel1.Controls.Add(btnIncreaseLines);
             panel1.Controls.Add(pictureBox17);
             panel1.Controls.Add(pictureBox16);
             panel1.Controls.Add(lblLine10);
@@ -258,6 +264,28 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1052, 673);
             panel1.TabIndex = 12;
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.Anchor = AnchorStyles.None;
+            pictureBox17.BackgroundImage = Properties.Resources.treasurebag;
+            pictureBox17.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox17.Location = new Point(808, 12);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(88, 82);
+            pictureBox17.TabIndex = 25;
+            pictureBox17.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            pictureBox16.Anchor = AnchorStyles.None;
+            pictureBox16.BackgroundImage = Properties.Resources.treasurebag;
+            pictureBox16.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox16.Location = new Point(144, 12);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(88, 82);
+            pictureBox16.TabIndex = 24;
+            pictureBox16.TabStop = false;
             // 
             // lblLine10
             // 
@@ -550,27 +578,49 @@
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
             // 
-            // pictureBox16
+            // btnDecreaseLines
             // 
-            pictureBox16.Anchor = AnchorStyles.None;
-            pictureBox16.BackgroundImage = Properties.Resources.treasurebag;
-            pictureBox16.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox16.Location = new Point(144, 12);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(88, 82);
-            pictureBox16.TabIndex = 24;
-            pictureBox16.TabStop = false;
+            btnDecreaseLines.Anchor = AnchorStyles.None;
+            btnDecreaseLines.BackColor = Color.DarkOliveGreen;
+            btnDecreaseLines.BackgroundImage = Properties.Resources.minus;
+            btnDecreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
+            btnDecreaseLines.FlatStyle = FlatStyle.Flat;
+            btnDecreaseLines.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnDecreaseLines.ImageAlign = ContentAlignment.TopLeft;
+            btnDecreaseLines.Location = new Point(254, 621);
+            btnDecreaseLines.Name = "btnDecreaseLines";
+            btnDecreaseLines.Size = new Size(15, 15);
+            btnDecreaseLines.TabIndex = 27;
+            btnDecreaseLines.Text = "-";
+            btnDecreaseLines.UseVisualStyleBackColor = false;
             // 
-            // pictureBox17
+            // btnIncreaseLines
             // 
-            pictureBox17.Anchor = AnchorStyles.None;
-            pictureBox17.BackgroundImage = Properties.Resources.treasurebag;
-            pictureBox17.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox17.Location = new Point(808, 12);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(88, 82);
-            pictureBox17.TabIndex = 25;
-            pictureBox17.TabStop = false;
+            btnIncreaseLines.Anchor = AnchorStyles.None;
+            btnIncreaseLines.BackColor = Color.DarkOliveGreen;
+            btnIncreaseLines.BackgroundImage = Properties.Resources.plus;
+            btnIncreaseLines.BackgroundImageLayout = ImageLayout.Stretch;
+            btnIncreaseLines.FlatStyle = FlatStyle.Flat;
+            btnIncreaseLines.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnIncreaseLines.ImageAlign = ContentAlignment.TopLeft;
+            btnIncreaseLines.Location = new Point(290, 621);
+            btnIncreaseLines.Name = "btnIncreaseLines";
+            btnIncreaseLines.Size = new Size(15, 15);
+            btnIncreaseLines.TabIndex = 26;
+            btnIncreaseLines.UseVisualStyleBackColor = false;
+            // 
+            // lblLines
+            // 
+            lblLines.Anchor = AnchorStyles.None;
+            lblLines.AutoSize = true;
+            lblLines.BackColor = Color.Transparent;
+            lblLines.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            lblLines.ForeColor = Color.DarkSlateGray;
+            lblLines.Location = new Point(254, 597);
+            lblLines.Name = "lblLines";
+            lblLines.Size = new Size(72, 20);
+            lblLines.TabIndex = 28;
+            lblLines.Text = "Lines: 5";
             // 
             // Form1
             // 
@@ -589,6 +639,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
@@ -602,8 +654,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ResumeLayout(false);
         }
 
@@ -647,5 +697,8 @@
         private Label lblLine6;
         private PictureBox pictureBox16;
         private PictureBox pictureBox17;
+        private Label lblLines;
+        private Button btnDecreaseLines;
+        private Button btnIncreaseLines;
     }
 }
