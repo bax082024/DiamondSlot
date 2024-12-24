@@ -78,6 +78,8 @@
             pictureBox23 = new PictureBox();
             pictureBox24 = new PictureBox();
             pictureBox25 = new PictureBox();
+            pictureBox26 = new PictureBox();
+            pictureBox27 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -105,6 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -250,6 +254,8 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox27);
+            panel1.Controls.Add(pictureBox26);
             panel1.Controls.Add(pictureBox25);
             panel1.Controls.Add(pictureBox24);
             panel1.Controls.Add(pictureBox23);
@@ -715,7 +721,7 @@
             // 
             pictureBox23.BackgroundImage = Properties.Resources.gems3;
             pictureBox23.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox23.Location = new Point(770, 561);
+            pictureBox23.Location = new Point(808, 561);
             pictureBox23.Name = "pictureBox23";
             pictureBox23.Size = new Size(73, 62);
             pictureBox23.TabIndex = 35;
@@ -740,6 +746,26 @@
             pictureBox25.Size = new Size(73, 62);
             pictureBox25.TabIndex = 37;
             pictureBox25.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            pictureBox26.BackgroundImage = Properties.Resources.cash;
+            pictureBox26.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox26.Location = new Point(12, 230);
+            pictureBox26.Name = "pictureBox26";
+            pictureBox26.Size = new Size(73, 62);
+            pictureBox26.TabIndex = 38;
+            pictureBox26.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            pictureBox27.BackgroundImage = Properties.Resources.cash;
+            pictureBox27.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox27.Location = new Point(965, 230);
+            pictureBox27.Name = "pictureBox27";
+            pictureBox27.Size = new Size(73, 62);
+            pictureBox27.TabIndex = 39;
+            pictureBox27.TabStop = false;
             // 
             // Form1
             // 
@@ -781,6 +807,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
             ResumeLayout(false);
         }
 
@@ -835,5 +863,7 @@
         private PictureBox pictureBox21;
         private PictureBox pictureBox25;
         private PictureBox pictureBox24;
+        private PictureBox pictureBox27;
+        private PictureBox pictureBox26;
     }
 }
