@@ -94,7 +94,7 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = Properties.Resources._51;
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox5.Location = new Point(30, 46);
+            pictureBox5.Location = new Point(30, 48);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(41, 37);
             pictureBox5.TabIndex = 4;
@@ -103,20 +103,22 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(96, 68);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(87, 61);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(90, 15);
             label1.TabIndex = 5;
-            label1.Text = "label1";
+            label1.Text = "3x -  JACKPOT!";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(96, 150);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(119, 15);
             label2.TabIndex = 6;
-            label2.Text = "label2";
+            label2.Text = "3x Bells = 30 credits";
             // 
             // label3
             // 
