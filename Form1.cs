@@ -148,6 +148,26 @@ namespace Slot777
             pictureBox3.Image = imageCache[random.Next(1, imageCache.Count + 1)];
 
             spinCount++;
+
+            // Stop spinning after a certain number of spins
+            if (spinCount >= 20) // Adjust for the number of spins
+            {
+                spinTimer.Stop();
+                spinCount = 0;
+
+                // Calculate the final result
+                SpinReels(); // Final spin to set the outcome
+                CalculateWin();
+                UpdateUI();
+
+                // Game Over Check
+                if (credits <= 0)
+                {
+                    MessageBox.Show("Game Over! No more credits.", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    credits = 100; // Reset credits
+                    UpdateUI();
+                }
+            }
         }
     }
 }
