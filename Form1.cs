@@ -25,6 +25,10 @@ namespace Slot777
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Initialize Timer
+            spinTimer.Interval = 100; // Adjust spin interval as desired (milliseconds)
+            spinTimer.Tick += spinTimer_Tick; // Attach the Tick event
+
             // Preload images into a cache for better performance
             LoadImages();
 
@@ -104,8 +108,14 @@ namespace Slot777
                 // Deduct the bet
                 credits -= bet;
 
+
+
                 // Spin the reels
                 SpinReels();
+
+                // Start the spin animation
+                spinCount = 0; // Reset the spin count
+                spinTimer.Start();
 
                 // Calculate win
                 CalculateWin();
@@ -160,7 +170,7 @@ namespace Slot777
 
         private void spinTimer_Tick(object sender, EventArgs e)
         {
-            PlaySound();
+            
 
             // Spin the reels by assigning random images
             pictureBox1.Image = imageCache[random.Next(1, imageCache.Count + 1)];
