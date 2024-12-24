@@ -70,38 +70,44 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(37, 20);
             label1.Name = "label1";
-            label1.Size = new Size(68, 15);
+            label1.Size = new Size(73, 15);
             label1.TabIndex = 3;
             label1.Text = "Credits: 100";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(186, 20);
             label2.Name = "label2";
-            label2.Size = new Size(36, 15);
+            label2.Size = new Size(40, 15);
             label2.TabIndex = 4;
             label2.Text = "Bet: 5";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(336, 20);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(42, 15);
             label3.TabIndex = 5;
             label3.Text = "Win: 0";
             // 
             // button1
             // 
+            button1.BackColor = Color.YellowGreen;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(188, 189);
             button1.Name = "button1";
             button1.Size = new Size(131, 43);
             button1.TabIndex = 6;
             button1.Text = "Spin";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Form1
