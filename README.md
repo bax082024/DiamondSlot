@@ -16,4 +16,10 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 	- Lands on Reels 1 & 2: Returns bet + 2.
 	- Lands on Reels 1, 2, & 3: Additional payouts.
 
+---
+
+## Customizations
+- Configurable Win Rates: Easily tweak the win rate by adjusting symbol weights.
+- Custom **Backgrounds and Icons:** Background textures and icon images can be replaced with custom designs.
+
 
