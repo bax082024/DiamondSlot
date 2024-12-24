@@ -33,16 +33,27 @@ namespace Slot777
             // Preload images into a cache for better performance
             LoadImages();
 
-            // Initialize UI
-            pictureBox1.Image = imageCache[1];
-            pictureBox2.Image = imageCache[2];
-            pictureBox3.Image = imageCache[3];
-            UpdateUI();
+            // Add all PictureBoxes to the reels list
+            reels.AddRange(new PictureBox[]
+            {
+                pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5,
+                pictureBox6, pictureBox7, pictureBox8, pictureBox9, pictureBox10,
+                pictureBox11, pictureBox12, pictureBox13, pictureBox14, pictureBox15
+            });
+
+            // Initialize UI with default images
+            for (int i = 0; i < reels.Count; i++)
+            {
+                reels[i].Image = imageCache[(i % imageCache.Count) + 1]; // Assign default images
+            }
+
+            UpdateUI(); // Update UI with initial values
         }
+
 
         private void LoadImages()
         {
-            int numberOfImages = 5; // Update this to the total number of images
+            int numberOfImages = 10; // Update this to the total number of images
             for (int i = 1; i <= numberOfImages; i++)
             {
                 string fileName = $"{i}.png";
@@ -59,16 +70,14 @@ namespace Slot777
 
         private void SpinReels()
         {
-            // Generate random numbers for each reel
             int maxImageIndex = imageCache.Count;
-            p1 = random.Next(1, maxImageIndex + 1);
-            p2 = random.Next(1, maxImageIndex + 1);
-            p3 = random.Next(1, maxImageIndex + 1);
 
-            // Assign corresponding images
-            pictureBox1.Image = imageCache[p1];
-            pictureBox2.Image = imageCache[p2];
-            pictureBox3.Image = imageCache[p3];
+            // Iterate through all reels and assign random images
+            for (int i = 0; i < reels.Count; i++)
+            {
+                int randomImage = random.Next(1, maxImageIndex + 1); // Random image index
+                reels[i].Image = imageCache[randomImage]; // Assign image to reel
+            }
         }
 
         private void CalculateWin()
