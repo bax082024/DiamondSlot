@@ -80,6 +80,8 @@
             pictureBox4 = new PictureBox();
             pictureBox14 = new PictureBox();
             btnPaytable = new Button();
+            pictureBox28 = new PictureBox();
+            pictureBox29 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -109,6 +111,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox29).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -178,11 +182,11 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.DarkSlateGray;
-            label3.Location = new Point(467, 79);
+            label3.Location = new Point(454, 83);
             label3.Name = "label3";
-            label3.Size = new Size(59, 20);
+            label3.Size = new Size(79, 25);
             label3.TabIndex = 5;
             label3.Text = "Win: 0";
             label3.Visible = false;
@@ -255,6 +259,8 @@
             panel1.Anchor = AnchorStyles.None;
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox29);
+            panel1.Controls.Add(pictureBox28);
             panel1.Controls.Add(pictureBox27);
             panel1.Controls.Add(pictureBox26);
             panel1.Controls.Add(pictureBox25);
@@ -301,7 +307,7 @@
             pictureBox27.Anchor = AnchorStyles.None;
             pictureBox27.BackgroundImage = Properties.Resources.cash;
             pictureBox27.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox27.Location = new Point(965, 230);
+            pictureBox27.Location = new Point(965, 505);
             pictureBox27.Name = "pictureBox27";
             pictureBox27.Size = new Size(73, 62);
             pictureBox27.TabIndex = 39;
@@ -785,6 +791,28 @@
             btnPaytable.UseVisualStyleBackColor = false;
             btnPaytable.Click += btnPaytable_Click;
             // 
+            // pictureBox28
+            // 
+            pictureBox28.Anchor = AnchorStyles.None;
+            pictureBox28.BackgroundImage = Properties.Resources.scepter;
+            pictureBox28.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox28.Location = new Point(12, 505);
+            pictureBox28.Name = "pictureBox28";
+            pictureBox28.Size = new Size(73, 62);
+            pictureBox28.TabIndex = 40;
+            pictureBox28.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            pictureBox29.Anchor = AnchorStyles.None;
+            pictureBox29.BackgroundImage = Properties.Resources.scepter;
+            pictureBox29.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox29.Location = new Point(965, 230);
+            pictureBox29.Name = "pictureBox29";
+            pictureBox29.Size = new Size(73, 62);
+            pictureBox29.TabIndex = 41;
+            pictureBox29.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -827,6 +855,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox29).EndInit();
             ResumeLayout(false);
         }
 
@@ -883,5 +913,7 @@
         private PictureBox pictureBox24;
         private PictureBox pictureBox27;
         private PictureBox pictureBox26;
+        private PictureBox pictureBox29;
+        private PictureBox pictureBox28;
     }
 }

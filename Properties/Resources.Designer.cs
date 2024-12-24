@@ -213,6 +213,16 @@ namespace Slot777.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap scepter {
+            get {
+                object obj = ResourceManager.GetObject("scepter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shinydiamond {
             get {
                 object obj = ResourceManager.GetObject("shinydiamond", resourceCulture);
