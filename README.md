@@ -41,6 +41,10 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 ## How to Play
 
 1. **Adjust the bet:**
-	-  Use the `+` and `-` buttons to set your desired bet amount and desired play lines  (1 to 3 credits per payline, and 1 to 5 paylines) Max bet total = 15 credits.
-
+	-  Use the "+" and "-" buttons to set your desired bet amount (1 to 3 credits per payline).
+2. **Select Active Paylines:**
+	- Increase or decrease the number of active paylines (1 to 5) using the designated buttons.
+3. **spin The Reels:**
+	- Hit the "Spin" button to start the game. 
+	
 ---
