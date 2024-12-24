@@ -46,5 +46,6 @@ This project features exciting gameplay with dynamic paylines, adjustable bets a
 	- Increase or decrease the number of active paylines (1 to 5) using the designated buttons.
 3. **spin The Reels:**
 	- Hit the "Spin" button to start the game. 
-	
+4. **Winnings:**
+	- Are based on matching symbols across active paylines. Check the Paytable for detailed rules.
 ---
