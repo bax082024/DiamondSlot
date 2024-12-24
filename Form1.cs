@@ -309,6 +309,10 @@ namespace Slot777
                 UpdateLineLabels();
                 UpdateUI();
             }
+            else
+            {
+                MessageBox.Show("At least one line must be active!", "Min Lines", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 
